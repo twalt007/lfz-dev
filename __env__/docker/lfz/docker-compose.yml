@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  dev:
+    build:
+      context: ../../
+      dockerfile: docker/lfz/Dockerfile
+    container_name: dev
+    stdin_open: true
+    tty: true
+    hostname: localhost
+    ports:
+      - 80:80
+      - 443:443
+      - 3000:3000
+      - 3001:3001
+    volumes:
+      - ../../../:/home/dev/lfz
+      - lfz_dev_home:/home/dev
+      - lfz_dev_data:/var/lib/mysql/
+    command: ["tail", "-f", "/dev/null"]
+
+volumes:
+  lfz_dev_data:
+  lfz_dev_home:
