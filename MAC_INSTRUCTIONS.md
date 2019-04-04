@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Get [Docker for Mac](https://docs.docker.com/v17.12/docker-for-mac/install/) by choosing the **"stable channel"** download.
+1. Download **Docker for Mac** at <a href="https://download.docker.com/mac/stable/31259/Docker.dmg" _target="blank">https://download.docker.com/mac/stable/31259/Docker.dmg</a>.
 2. Install Docker by opening the `.dmg` file you just downloaded and dragging Docker to your Applications.
 3. Open your Applications folder in Finder and open the Docker application.
 4. If prompted, continue opening Docker and provide the password you use to log into your Mac.
@@ -21,7 +21,7 @@ chmod +x /Users/$(whoami)/Desktop/student-dev-env/__env__/macos/*.command
 ```
 11. The installation process will open a Terminal window and prepare the development environment. It will close when complete.
 
-## Entering and exiting the Environment
+## Entering and Exiting the Environment
 
 1. Open a new Terminal window. Type `lfz-dev` and press enter. Your prompt should change.
 2. Type `whoami` and press `Enter`. The output should be `dev`.
