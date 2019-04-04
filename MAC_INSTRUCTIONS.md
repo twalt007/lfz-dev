@@ -12,6 +12,7 @@
 7. Then click "**Preferences...**" and ensure that "**Start Docker Desktop when you log in**" is _checked_.
 8. Ensure that there is a folder on your Desktop named `lfz`.
 9. Ensure that you have downloaded the files in this repository to a folder on your Desktop named `student-dev-env`.
+![Folders on Desktop](__env__/macos/desktop-folders.png)
 10. Right-click or Control-click the file `student-dev-env/__env__/macos/install.command` and choose **"Open With > Terminal"**.
 
 **NOTE**: If you receive a permissions error, paste the following command into a Terminal window and press `Enter`. Then try step 10 again.
