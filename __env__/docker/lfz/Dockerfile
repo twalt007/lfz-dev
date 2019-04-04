@@ -15,7 +15,7 @@ COPY common/mcrypt.so /usr/lib/php/20170718/mcrypt.so
 
 USER dev
 
-WORKDIR /home/dev/lfz
+WORKDIR /home/dev
 
 EXPOSE 80 443 3000 3001
 
