@@ -3,7 +3,7 @@ Student development environment setup instructions.
 
 ## Motivation
 
-This repository contains installation and setup procedures for a setting up a development environment on MacOS or Windows. Its purpose is to provide a consistent set of tools to students irrespective of the platform their laptop is running.
+This repository contains installation procedures for setting up a development environment on MacOS or Windows. Its purpose is to provide a consistent set of tools to students, irrespective of the platform their laptop is running.
 
 ## What's Inside
 
