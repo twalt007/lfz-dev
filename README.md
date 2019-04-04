@@ -20,6 +20,8 @@ This repository contains installation and setup procedures for a setting up a de
 
 ## System Requirements
 
+**Note:** Students with less than 10 GB of free disk space should move their media files to their personal external hard drive or another home computer. Additional space can be freed by uninstalling applications not specific to their work, studies, or LearningFuze instruction.
+
 ### MacOS
 
 Students using MacOS will be running their environment using [Docker for Mac](https://docs.docker.com/v17.12/docker-for-mac/install/). Information about a student's computer can be found by opening the apple () menu and clicking "About This Mac".
@@ -35,8 +37,6 @@ Students using Windows will be running their environment in [Windows Subsystem f
 - **Windows 10** - 64-bit Home or Pro
 - 8 GB RAM
 - 10 GB free disk space
-
-**Note:** Students with less than 10 GB of free disk space should move their media files to their personal external hard drive or another home computer. Additional space can be freed by uninstalling applications not specific to their work, studies, or LearningFuze instruction.
 
 ## Getting Ready
 
