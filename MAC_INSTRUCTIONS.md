@@ -23,7 +23,7 @@ Information about your computer can be found by opening the apple () menu and
 2. Install Docker by opening the `.dmg` file you just downloaded and dragging Docker to your Applications. Then close the installer window.
 3. Open your Applications folder in Finder and open the Docker application.
 4. If prompted, continue opening Docker and provide the password you use to log into your Mac.
-5. The status bar at the top-right of your screen should have a Docker whale icon in it now.
+5. Within a few moments, the status bar at the top-right of your screen should have a Docker whale icon in it.
 6. Click on the Docker whale icon to check that "**Docker Desktop is running**".
 7. Then click "**Preferences...**" and ensure that "**Start Docker Desktop when you log in**" is _checked_ and "**Automatically check for updates**" is _unchecked_.
 
