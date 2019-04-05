@@ -21,7 +21,7 @@
 2. Unzip downloaded zip file to your Desktop.
 3. Rename the unzipped folder to `student-dev-env`.
 
-![Download the Mac Installer](__env__/macos/download-installer.gif).
+![Download the Mac Installer](__env__/macos/download-installer.png).
 ![Unzip the Mac Installer](__env__/macos/unzip-installer.gif).
 
 
