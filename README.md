@@ -44,6 +44,6 @@ Both sets of instructions assume that students have a folder on their Desktop na
 
 The files and folders in this repository should be downloaded to the student's Desktop to a directory named **`student-dev-env`**.
 
-[Continue to MacOS Installation](MAC_INSTRUCTIONS.md)
+[See setup instructions for Mac](MAC_INSTRUCTIONS.md)
 
-[Continue to Windows 10 Installation](WINDOWS_INSTRUCTIONS.md)
+[See setup instructions for Windows](WINDOWS_INSTRUCTIONS.md)
