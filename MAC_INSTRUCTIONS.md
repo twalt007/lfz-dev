@@ -1,5 +1,6 @@
 # MacOS Instructions
 
+
 ## Install Docker
 
 1. Download **Docker for Mac** at <a href="https://download.docker.com/mac/stable/31259/Docker.dmg" _target="blank">https://download.docker.com/mac/stable/31259/Docker.dmg</a>
@@ -8,12 +9,23 @@
 4. If prompted, continue opening Docker and provide the password you use to log into your Mac.
 5. The status bar at the top-right of your screen should have a Docker whale icon in it now.
 6. Click on the Docker whale icon to check that "**Docker Desktop is running**".
-7. Then click "**Preferences...**" and ensure that "**Start Docker Desktop when you log in**" is _checked_.
+7. Then click "**Preferences...**" and ensure that "**Start Docker Desktop when you log in**" is _checked_ and "**Automatically check for updates**" is _unchecked_.
 
 ![Install Docker](__env__/macos/install-docker-app.gif)
 ![Docker in status bar](__env__/macos/docker-in-status-bar.png)
 
-## Start the Installer
+
+## Getting the Environment Installer
+
+1. Download the master branch of <a href="https://github.com/learning-fuze/student-dev-env" target="_blank">this repository</a>.
+2. Unzip downloaded zip file to your Desktop.
+3. Rename the unzipped folder to `student-dev-env`.
+
+![Download the Mac Installer](__env__/macos/download-installer.gif).
+![Unzip the Mac Installer](__env__/macos/unzip-installer.gif).
+
+
+## Setting Up the Environment
 
 1. Ensure that there is a folder on your Desktop named `lfz`.
 2. Ensure that you have downloaded the files in this repository to a folder on your Desktop named `student-dev-env`.
@@ -35,6 +47,7 @@ bash __env__/macos/install.bash
 5. To return to the development environment, type `lfz-dev` and press `Enter`.
 
 ![Entering Development Environment](__env__/macos/entering-dev-env.gif)
+
 
 ## Testing Your Environment
 
