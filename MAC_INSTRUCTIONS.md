@@ -1,5 +1,7 @@
 # MacOS Instructions
 
+This guide provides instructions for setting up your Mac for development. Please note that although many parts of the instructions include helpful images an animations, the instructions **must** be read and followed step-by-step to ensure correct setup.
+
 ## Double-checking System Requirements
 
 - **MacOS Version 10.12** or later
@@ -12,6 +14,8 @@ Information about your computer can be found by opening the apple () menu and
 
 ![About this Mac](__env__/macos/about-this-mac.png)
 ![Mac Storage](__env__/macos/about-this-mac.gif)
+
+---
 
 ## Installing Docker
 
@@ -26,15 +30,15 @@ Information about your computer can be found by opening the apple () menu and
 ![Install Docker](__env__/macos/install-docker-app.gif)
 ![Docker in status bar](__env__/macos/docker-in-status-bar.png)
 
+---
 
 ## Getting the Environment Installer
 
-1. Download the master branch of <a href="https://github.com/learning-fuze/student-dev-env" target="_blank">this repository</a>.
-2. Unzip downloaded zip file to your Desktop.
+1. Download the installation files <a href="https://github.com/Learning-Fuze/student-dev-env/archive/master.zip" target="_blank">here</a>.
+2. Move the downloaded zip file to your Desktop and unzip it.
 3. Rename the unzipped folder to `student-dev-env`.
 
-![Download the Mac Installer](__env__/macos/download-installer.png).
-![Unzip the Mac Installer](__env__/macos/unzip-installer.gif).
+![Unzip the Mac Installer](__env__/macos/download-installer.gif).
 
 
 ## Setting Up the Environment
