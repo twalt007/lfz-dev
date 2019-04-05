@@ -1,7 +1,19 @@
 # MacOS Instructions
 
+## Double-checking System Requirements
 
-## Install Docker
+- **MacOS Version 10.12** or later
+- 8 GB RAM
+- 10 GB free disk space
+
+Information about your computer can be found by opening the apple () menu and clicking "About This Mac". To see the available disk space, click the "Storage" tab.
+
+**Note:** If you have less than 10 GB of available disk space, you can move your media files to a personal external hard drive or another home computer. Additional space can be freed by uninstalling applications not needed for your work, studies, or LearningFuze instruction.
+
+![About this Mac](__env__/macos/about-this-mac.png)
+![Mac Storage](__env__/macos/about-this-mac.gif)
+
+## Installing Docker
 
 1. Download **Docker for Mac** at <a href="https://download.docker.com/mac/stable/31259/Docker.dmg" _target="blank">https://download.docker.com/mac/stable/31259/Docker.dmg</a>
 2. Install Docker by opening the `.dmg` file you just downloaded and dragging Docker to your Applications. Then close the installer window.

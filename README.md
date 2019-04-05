@@ -20,13 +20,13 @@ This repository contains installation procedures for setting up a development en
 
 ## System Requirements
 
-**Note:** Students with less than 10 GB of free disk space should move their media files to their personal external hard drive or another home computer. Additional space can be freed by uninstalling applications not needed for their work, studies, or LearningFuze instruction.
+**Note:** Students with less than 10 GB of available disk space should move their media files to their personal external hard drive or another home computer. Additional space can be freed by uninstalling applications not needed for their work, studies, or LearningFuze instruction.
 
 ### MacOS
 
-Students using MacOS will be running their environment in [Docker for Mac](https://docs.docker.com/v17.12/docker-for-mac/install/). Information about a student's computer can be found by opening the apple () menu and clicking "About This Mac".
+Students using MacOS will be running their environment in **Docker for Mac**. Information about a student's computer can be found by opening the apple () menu and clicking "About This Mac". To see the available disk space, click the "Storage" tab.
 
-- **MacOS 10.12 Sierra** or later
+- **MacOS Version 10.12** or later
 - 8 GB RAM
 - 10 GB free disk space
 
