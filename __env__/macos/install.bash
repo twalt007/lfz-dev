@@ -9,4 +9,5 @@ cp $setup_path/*.php $lfz_path/ && \
 mkdir -p $local_bin && \
 echo "docker-compose -f $docker_compose_path up -d && docker-compose -f $docker_compose_path exec dev /bin/bash" > $local_bin/lfz-dev && \
 chmod +x $local_bin/lfz-dev && \
+echo "Getting things started. This may take a while!" && \
 docker-compose -f $docker_compose_path build > $desktop_path/lfz_dev_install.log
