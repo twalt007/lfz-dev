@@ -40,6 +40,7 @@ Information about your computer can be found by opening the apple () menu and
 
 ![Unzip the Mac Installer](__env__/macos/download-installer.gif).
 
+---
 
 ## Setting Up the Environment
 
@@ -53,6 +54,7 @@ bash __env__/macos/install.bash
 ```
 ![Running the Mac installer](__env__/macos/mac-install-command.gif)
 
+---
 
 ## Entering and Exiting the Environment
 
@@ -64,6 +66,7 @@ bash __env__/macos/install.bash
 
 ![Entering Development Environment](__env__/macos/entering-dev-env.gif)
 
+---
 
 ## Testing Your Environment
 
