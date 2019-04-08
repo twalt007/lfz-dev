@@ -6,7 +6,7 @@ local_bin="/Users/$(whoami)/.local/bin"
 
 if [ ! -d $lfz_path ]; then
   echo -e "\nNo lfz folder found on your Desktop!"
-  echo -e "Be sure to it exists before trying again."
+  echo -e "Be sure it exists before trying again."
   echo -e "Aborting..."
   exit 1
 fi
