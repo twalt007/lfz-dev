@@ -19,6 +19,8 @@ Information about your computer can be found by opening the apple () menu and
 
 ## Installing Docker
 
+**Note:** Creating a DockerHub account is not required to install and use Docker. You can safely ignore or dismiss all prompts to sign into DockerHub.
+
 1. Download **Docker for Mac** at <a href="https://download.docker.com/mac/stable/31259/Docker.dmg" _target="blank">https://download.docker.com/mac/stable/31259/Docker.dmg</a>
 2. Install Docker by opening the `.dmg` file you just downloaded and dragging Docker to your Applications. Then close the installer window.
 3. Open your Applications folder in Finder and open the Docker application.
