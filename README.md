@@ -42,8 +42,6 @@ Students using Windows will be running their environment in [Windows Subsystem f
 
 Both sets of instructions assume that students have a folder on their Desktop named **`lfz`** to hold their LearningFuze code repositories. Before beginning, ensure that this folder is present.
 
-The files and folders in this repository should be downloaded to the student's Desktop to a directory named **`student-dev-env`**.
-
 [See setup instructions for Mac](MAC_INSTRUCTIONS.md)
 
 [See setup instructions for Windows](WINDOWS_INSTRUCTIONS.md)
