@@ -9,6 +9,7 @@ cp $setup_path/*.php $lfz_path/ && \
 mkdir -p $local_bin && \
 echo "docker-compose -f $docker_compose_path up -d && docker-compose -f $docker_compose_path exec dev /bin/bash" > $local_bin/lfz-dev && \
 chmod +x $local_bin/lfz-dev && \
+echo -e '\nexport $PATH=$HOME/.local/bin:$PATH' >> /Users/$(whoami)/.bash_profile && \
 sleep 1 && \
 echo -e "\nGetting things started. This may take a while!" && \
 sleep 1 && \
