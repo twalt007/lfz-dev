@@ -7,7 +7,7 @@ local_bin="/Users/$(whoami)/.local/bin"
 cp -R $setup_path/__env__ $lfz_path/__env__ && \
 cp $setup_path/*.php $lfz_path/ && \
 mkdir -p $local_bin && \
-echo "docker-compose -f $docker_compose_path up -d && docker-compose -f $docker_compose_path exec dev /bin/bash" > $local_bin/lfz-dev && \
+echo "docker-compose -f $docker_compose_path up -d && docker-compose -f $docker_compose_path exec dev /bin/bash -l" > $local_bin/lfz-dev && \
 chmod +x $local_bin/lfz-dev && \
 echo -e '\nexport $PATH=$HOME/.local/bin:$PATH' >> /Users/$(whoami)/.bash_profile && \
 sleep 1 && \
