@@ -1,5 +1,5 @@
-# student-dev-env
-Student development environment setup instructions.
+# lfz-dev
+Student development environment installer and setup instructions.
 
 ## Motivation
 

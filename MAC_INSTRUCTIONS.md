@@ -36,9 +36,9 @@ Information about your computer can be found by opening the apple () menu and
 
 ## Getting the Environment Installer
 
-1. Download the installation files <a href="https://github.com/Learning-Fuze/student-dev-env/archive/master.zip" target="_blank">here</a>.
+1. Download the installation files <a href="https://github.com/Learning-Fuze/lfz-dev/archive/master.zip" target="_blank">here</a>.
 2. Move the downloaded zip file to your Desktop and unzip it.
-3. Rename the unzipped folder to `student-dev-env`.
+3. Rename the unzipped folder to `lfz-dev`.
 
 ![Unzip the Mac Installer](__env__/macos/download-installer.gif).
 
@@ -51,9 +51,9 @@ Information about your computer can be found by opening the apple () menu and
 3. Paste the following command into your Terminal and press `Enter`. This may take a while!
 
 ```bash
-bash ~/Desktop/student-dev-env/__env__/macos/install.bash
+bash ~/Desktop/lfz-dev/__env__/macos/install.bash
 ```
-![Running the Mac installer](__env__/macos/mac-install-command.gif)
+![Running the Mac installer](__env__/macos/run-mac-installer.gif)
 
 ---
 
