@@ -47,9 +47,8 @@ Information about your computer can be found by opening the apple () menu and
 ## Setting Up the Environment
 
 1. Ensure that there is a folder on your Desktop named `lfz`.
-2. Ensure that you have downloaded the files in this repository to a folder on your Desktop named `student-dev-env`.
-3. Open a new Terminal window by pressing `Command (⌘) + Space`, typing Terminal, and pressing `Enter`.
-4. Paste the following command into your Terminal and press `Enter`. This may take a while!
+2. Open a new Terminal window by pressing `Command (⌘) + Space`, typing Terminal, and pressing `Enter`.
+3. Paste the following command into your Terminal and press `Enter`. This may take a while!
 
 ```bash
 bash ~/Desktop/student-dev-env/__env__/macos/install.bash
@@ -58,13 +57,15 @@ bash ~/Desktop/student-dev-env/__env__/macos/install.bash
 
 ---
 
-## Entering and Exiting the Environment
+## Entering and Exiting the Development Environment
 
-1. Open a new Terminal window. Type `lfz-dev` and press enter. Your prompt should change.
-2. Type `whoami` and press `Enter`. The output should be `dev`.
-3. Type `ls -a` and press `Enter`. The output should include `lfz`.
-4. Type `exit` and press `Enter` to exit the development environment and return to your normal Terminal session.
-5. To return to the development environment, type `lfz-dev` and press `Enter`.
+1. Close your Terminal window.
+2. Open a new Terminal window by pressing `Command (⌘) + Space`, typing Terminal, and pressing `Enter`.
+3. Type `lfz-dev` and press enter. Your prompt should change.
+4. Type `whoami` and press `Enter`. The output should be `dev`.
+5. Type `ls -a` and press `Enter`. The output should include `lfz`.
+6. Type `exit` and press `Enter` to exit the development environment and return to your normal Terminal session.
+7. To return to the development environment, type `lfz-dev` and press `Enter`.
 
 ![Entering Development Environment](__env__/macos/entering-dev-env.gif)
 
