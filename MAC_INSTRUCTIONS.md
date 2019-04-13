@@ -63,7 +63,7 @@ bash ~/Desktop/lfz-dev/__env__/macos/install.bash
 2. Open a new Terminal window by pressing `Command (⌘) + Space`, typing Terminal, and pressing `Enter`.
 3. Type `lfz-dev` and press enter. Your prompt should change.
 4. Type `whoami` and press `Enter`. The output should be `dev`.
-5. Type `ls -a` and press `Enter`. The output should include `lfz`.
+5. Type `ls` and press `Enter`. The output should include `Desktop`.
 6. Type `exit` and press `Enter` to exit the development environment and return to your normal Terminal session.
 7. To return to the development environment, type `lfz-dev` and press `Enter`.
 
