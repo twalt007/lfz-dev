@@ -79,7 +79,7 @@ sudo service apache2 start
 sudo service mysql start
 http localhost
 ```
-2. Open your web browser and go to `localhost`. You should see the same HTML document, but presented to you as a web page.
+2. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
 3. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.
 
 ![Testing the Environment](__env__/macos/test-env.gif)
