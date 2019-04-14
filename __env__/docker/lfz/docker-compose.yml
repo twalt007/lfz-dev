@@ -15,9 +15,9 @@ services:
       - 3000:3000
       - 3001:3001
     volumes:
-      - ../../../:/home/dev/lfz
       - lfz_dev_home:/home/dev
       - lfz_dev_data:/var/lib/mysql/
+      - ../../../../:/home/dev/Desktop
     command: ["tail", "-f", "/dev/null"]
 
 volumes:

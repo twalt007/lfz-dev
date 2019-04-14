@@ -1,6 +1,6 @@
 desktop_path="/Users/$(whoami)/Desktop"
 lfz_path="$desktop_path/lfz"
-setup_path="$desktop_path/student-dev-env"
+setup_path="$desktop_path/lfz-dev"
 docker_compose_path="$lfz_path/__env__/docker/lfz/docker-compose.yml"
 local_bin="/Users/$(whoami)/.local/bin"
 

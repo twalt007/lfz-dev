@@ -2,6 +2,8 @@ fix-phpmyadmin() {
   # count(): Parameter must be an array or an object that implements Countable
   # https://stackoverflow.com/questions/48001569/phpmyadmin-count-parameter-must-be-an-array-or-an-object-that-implements-co/50536059
   sed -i "s/count(\$analyzed_sql_results\['select_expr'\]/(count(\$analyzed_sql_results['select_expr'])/g" /usr/share/phpmyadmin/libraries/sql.lib.php
+  # https://medium.com/@chaloemphonthipkasorn/%E0%B9%81%E0%B8%81%E0%B9%89-bug-phpmyadmin-php7-2-ubuntu-16-04-92b287090b01
+  sed -i "s/count(\$options/count((array)\$options/g" /usr/share/phpmyadmin/libraries/plugin_interface.lib.php
 }
 
 fix-apache2() {
@@ -29,4 +31,4 @@ echo "display_errors = On" >> /etc/php/7.2/apache2/php.ini && \
 sudo bash -c "echo extension=/usr/lib/php/20170718/mcrypt.so > /etc/php/7.2/cli/conf.d/mcrypt.ini" && \
 sudo bash -c "echo extension=/usr/lib/php/20170718/mcrypt.so > /etc/php/7.2/apache2/conf.d/mcrypt.ini" && \
 rm -rf /var/www/html/ && \
-ln -s /home/dev/lfz /var/www/html
+ln -s /home/dev/Desktop/lfz /var/www/html
