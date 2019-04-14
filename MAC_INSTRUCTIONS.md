@@ -106,3 +106,17 @@ sudo service mysql start
 # to stop MySQL
 sudo service mysql stop
 ```
+
+## Enhancing Terminal's Appearance
+
+The default appearance of the Terminal app can make it a bit difficult to use. The font is very small and the black-on-white color scheme can become fatiguing over time. Fortunately, `lfz-dev` comes with some customization that you can apply to your Terminal.
+
+1. Open the Terminal app by pressing `Command (⌘) + Space`, typing Terminal, and pressing `Enter`.
+2. Open Terminal's Preferences and select the Profiles pane. There should be a list of color themes in the left column.
+3. At the bottom of the themes list, click the small gear icon and select `Import...`
+4. Navigate to `Desktop > lfz-dev > __env__ > macos` and choose `lfz.terminal`.
+5. Select the `lfz` theme from your themes list and click Default to set it as your Terminal's default theme.
+6. The next time you open a Terminal window, the new theme should be applied.
+
+![Terminal Preferences](__env__/macos/terminal-preferences.png)
+![LFZ Terminal](__env__/macos/lfz-terminal.gif)
