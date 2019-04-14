@@ -29,4 +29,4 @@ echo "display_errors = On" >> /etc/php/7.2/apache2/php.ini && \
 sudo bash -c "echo extension=/usr/lib/php/20170718/mcrypt.so > /etc/php/7.2/cli/conf.d/mcrypt.ini" && \
 sudo bash -c "echo extension=/usr/lib/php/20170718/mcrypt.so > /etc/php/7.2/apache2/conf.d/mcrypt.ini" && \
 rm -rf /var/www/html/ && \
-ln -s /home/dev/lfz /var/www/html
+ln -s /home/dev/Desktop/lfz /var/www/html
