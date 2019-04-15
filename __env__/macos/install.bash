@@ -33,6 +33,7 @@ compose_file_path="$lfz_path/__env__/docker/lfz/docker-compose.yml"
 
 cat $(dirname $BASH_SOURCE)/lfz-dev.bash > $local_bin_path/lfz-dev
 cat $(dirname $BASH_SOURCE)/lfz-dev-stop.bash > $local_bin_path/lfz-dev-stop
+cat $(dirname $BASH_SOURCE)/lfz-dev-uninstall.bash > $local_bin_path/lfz-dev-uninstall
 chmod +x $local_bin_path/lfz-dev*
 
 sleep 1
