@@ -12,8 +12,8 @@ Information about your computer can be found by opening the apple () menu and
 
 **Note:** If you have less than 10 GB of available disk space, you can move your media files to a personal external hard drive or another home computer. Additional space can be freed by uninstalling applications not needed for your work, studies, or LearningFuze instruction.
 
-![About this Mac](__env__/macos/about-this-mac.png)
-![Mac Storage](__env__/macos/about-this-mac.gif)
+![About this Mac](__env__/macos/screenshots/about-this-mac.png)
+![Mac Storage](__env__/macos/screenshots/about-this-mac.gif)
 
 ---
 
@@ -29,8 +29,8 @@ Information about your computer can be found by opening the apple () menu and
 6. Click on the Docker whale icon to check that "**Docker Desktop is running**".
 7. Then click "**Preferences...**" and ensure that "**Start Docker Desktop when you log in**" is _checked_ and "**Automatically check for updates**" is _unchecked_.
 
-![Install Docker](__env__/macos/install-docker-app.gif)
-![Docker in status bar](__env__/macos/docker-in-status-bar.png)
+![Install Docker](__env__/macos/screenshots/install-docker-app.gif)
+![Docker in status bar](__env__/macos/screenshots/docker-in-status-bar.png)
 
 ---
 
@@ -40,7 +40,7 @@ Information about your computer can be found by opening the apple () menu and
 2. Move the downloaded zip file to your Desktop and unzip it.
 3. Rename the unzipped folder to `lfz-dev`.
 
-![Unzip the Mac Installer](__env__/macos/download-installer.gif).
+![Unzip the Mac Installer](__env__/macos/screenshots/download-installer.gif).
 
 ---
 
@@ -53,7 +53,7 @@ Information about your computer can be found by opening the apple () menu and
 ```bash
 bash ~/Desktop/lfz-dev/__env__/macos/install.bash
 ```
-![Running the Mac installer](__env__/macos/run-mac-installer.gif)
+![Running the Mac installer](__env__/macos/screenshots/run-mac-installer.gif)
 
 ---
 
@@ -67,7 +67,7 @@ bash ~/Desktop/lfz-dev/__env__/macos/install.bash
 6. Type `exit` and press `Enter` to exit the development environment and return to your normal Terminal session.
 7. To return to the development environment, type `lfz-dev` and press `Enter`.
 
-![Entering Development Environment](__env__/macos/entering-dev-env.gif)
+![Entering Development Environment](__env__/macos/screenshots/entering-dev-env.gif)
 
 ---
 
@@ -82,8 +82,8 @@ http localhost
 2. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
 3. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.
 
-![Testing the Environment](__env__/macos/test-env.gif)
-![Testing the Environment](__env__/macos/env-web.gif)
+![Testing the Environment](__env__/macos/screenshots/test-env.gif)
+![Testing the Environment](__env__/macos/screenshots/env-web.gif)
 
 The Apache Web Server and MySQL Database Server are not started automatically when you enter the development environment. They may already be running, but you'll want to learn the following commands to check, start, or stop them.
 
@@ -107,6 +107,13 @@ sudo service mysql start
 sudo service mysql stop
 ```
 
+## Uninstalling the Environment
+
+Along with `lfz-dev`, the `lfz-dev-uninstall` command has been added to your command line. If at any point you'd like to uninstall the LearningFuze development environment:
+
+1. Open a new Terminal window.
+2. Type `lfz-dev-uninstall` and press `Enter`.
+
 ## Enhancing Terminal's Appearance
 
 The default appearance of the Terminal app can make it a bit difficult to use. The font is very small and the black-on-white color scheme can become fatiguing over time. Fortunately, `lfz-dev` comes with some customization that you can apply to your Terminal.
@@ -118,5 +125,5 @@ The default appearance of the Terminal app can make it a bit difficult to use. T
 5. Select the `lfz` theme from your themes list and click Default to set it as your Terminal's default theme.
 6. The next time you open a Terminal window, the new theme should be applied.
 
-![Terminal Preferences](__env__/macos/terminal-preferences.png)
-![LFZ Terminal](__env__/macos/lfz-terminal.gif)
+![Terminal Preferences](__env__/macos/screenshots/terminal-preferences.png)
+![LFZ Terminal](__env__/macos/screenshots/lfz-terminal.gif)

@@ -1,8 +1,12 @@
-desktop_path="/Users/$(whoami)/Desktop"
+command -v docker-compose > /dev/null 2>&1 || {
+  echo -e "\nCould not find the required Docker commands."
+  echo -e "Be sure to install Docker before trying again."
+  echo -e "Aborting..."
+  exit 1
+}
+
+desktop_path="$HOME/Desktop"
 lfz_path="$desktop_path/lfz"
-setup_path="$desktop_path/lfz-dev"
-docker_compose_path="$lfz_path/__env__/docker/lfz/docker-compose.yml"
-local_bin="/Users/$(whoami)/.local/bin"
 
 if [ ! -d $lfz_path ]; then
   echo -e "\nNo lfz folder found on your Desktop!"
@@ -11,21 +15,32 @@ if [ ! -d $lfz_path ]; then
   exit 1
 fi
 
-command -v docker-compose >/dev/null 2>&1 || {
-  echo -e "\nCould not find the required Docker commands."
-  echo -e "Be sure to install Docker before trying again."
-  echo -e "Aborting..."
-  exit 1
-}
+local_bin_path="$HOME/.local/bin"
+bash_profile_path="$HOME/.bash_profile"
 
-cp -R $setup_path/__env__ $lfz_path/__env__ && \
-cp $setup_path/*.php $lfz_path/ && \
-mkdir -p $local_bin && \
-echo "docker-compose -f $docker_compose_path up -d && docker-compose -f $docker_compose_path exec dev /bin/bash -l" > $local_bin/lfz-dev && \
-chmod +x $local_bin/lfz-dev && \
-echo -e '\nexport PATH="$PATH:$HOME/.local/bin"' >> /Users/$(whoami)/.bash_profile && \
-sleep 1 && \
-echo -e "\nGetting things started. This may take a while!" && \
-sleep 1 && \
-docker-compose -f $docker_compose_path build > $desktop_path/lfz_dev_install.log && \
+touch $bash_profile_path
+mkdir -p $local_bin_path
+
+if [ $(grep -c 'export PATH="\$PATH:\$HOME/.local/bin"' $bash_profile_path) -eq "0" ]; then
+  echo -e '\nexport PATH="$PATH:$HOME/.local/bin"' >> $bash_profile_path
+fi
+
+lfz_dev_path="$desktop_path/lfz-dev"
+
+cp -R $lfz_dev_path/__env__ $lfz_dev_path/*.php $lfz_path/
+
+compose_file_path="$lfz_path/__env__/docker/lfz/docker-compose.yml"
+
+cat $(dirname $BASH_SOURCE)/lfz-dev.bash > $local_bin_path/lfz-dev
+cat $(dirname $BASH_SOURCE)/lfz-dev-stop.bash > $local_bin_path/lfz-dev-stop
+cat $(dirname $BASH_SOURCE)/lfz-dev-uninstall.bash > $local_bin_path/lfz-dev-uninstall
+chmod +x $local_bin_path/lfz-dev*
+
+sleep 1
+
+echo -e "\nGetting things started. This may take a while!"
+
+sleep 1
+
+docker-compose -f $compose_file_path build > $desktop_path/lfz-dev-install.log && \
 echo -e '\nDone!'
