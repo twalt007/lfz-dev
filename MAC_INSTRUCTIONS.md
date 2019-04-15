@@ -107,6 +107,13 @@ sudo service mysql start
 sudo service mysql stop
 ```
 
+## Uninstalling the Environment
+
+Along with `lfz-dev`, the `lfz-dev-uninstall` command has been added to your command line. If at any point you'd like to uninstall the LearningFuze development environment:
+
+1. Open a new Terminal window.
+2. Type `lfz-dev-uninstall` and press `Enter`.
+
 ## Enhancing Terminal's Appearance
 
 The default appearance of the Terminal app can make it a bit difficult to use. The font is very small and the black-on-white color scheme can become fatiguing over time. Fortunately, `lfz-dev` comes with some customization that you can apply to your Terminal.
