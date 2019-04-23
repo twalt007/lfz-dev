@@ -45,12 +45,20 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ## Creating a User Account in Ubuntu
 
-## Setting Up Cmder
+1. When Ubuntu is ready, it will prompt you to **Enter new UNIX username**.
+2. Type `dev` and press `Enter`.
+3. You will then be asked to choose a password. **Note:** When you type this password, you will not receive any visual feedback.<br/> Type `lfz` and press `Enter`.
+4. To confirm, type `lfz` again and press `Enter`.
+5. Close **Ubuntu**.
+
+![Ubuntu User](__env__/windows/screenshots/ubuntu-user.gif)
 
 ## Getting the Environment Installer
 
 1. Download the installation files <a href="https://github.com/Learning-Fuze/lfz-dev/archive/master.zip" target="_blank">here</a>.
 2. Move the downloaded zip file to your Desktop and unzip it.
 3. Rename the unzipped folder to `lfz-dev`.
+
+## Setting Up Cmder
 
 ## Setting Up the Environment
