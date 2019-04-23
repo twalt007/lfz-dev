@@ -21,6 +21,8 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ![This PC](__env__/windows/screenshots/this-pc.gif)
 
+---
+
 ## Enabling Windows Subsytem for Linux
 
 1. Open the Control Panel app.
@@ -31,6 +33,8 @@ To check your available disk space, open **File Explorer** and click on **This P
 5. A system restart is _required_ to continue. Restart your computer now.
 
 ![Enable WSL](__env__/windows/screenshots/enable-wsl.gif)
+
+---
 
 ## Installing Ubuntu 18.04
 
@@ -43,15 +47,19 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ![Install Ubuntu](__env__/windows/screenshots/install-ubuntu.gif)
 
+---
+
 ## Creating a User Account in Ubuntu
 
 1. When Ubuntu is ready, it will prompt you to **Enter new UNIX username**.
 2. Type `dev` and press `Enter`.
-3. You will then be asked to choose a password. **Note:** When you type this password, you will not receive any visual feedback.<br/> Type `lfz` and press `Enter`.
+3. You will then be asked to choose a password. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.<br/> Type `lfz` and press `Enter`.
 4. To confirm, type `lfz` again and press `Enter`.
 5. Close **Ubuntu**.
 
 ![Ubuntu User](__env__/windows/screenshots/ubuntu-user.gif)
+
+---
 
 ## Getting the Environment Installer
 
@@ -63,6 +71,8 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ![Download Installer](__env__/windows/screenshots/download-installer.gif)
 
+---
+
 ## Setting Up Cmder
 
 1. Open the `lfz-dev` folder on your Desktop.
@@ -72,9 +82,28 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ![Unzip Cmder](__env__/windows/screenshots/unzip-cmder.gif)
 
+---
+
 ## Setting Up the Environment
 
 1. Open **Cmder** and copy in the following command. You can right-click the Cmder prompt to paste it in. Then press `Enter`.
     ```bash
     sudo bash $(echo $(wslpath $(cmd.exe /C "echo %USERPROFILE%\Desktop\lfz-dev\__env__\windows\install.bash")) | tr -d '\r')
     ```
+2. If you are prompted for a password, then type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
+3. Good job! You can take a break, 'cause this may take a while!
+
+![Running the Windows installer](__env__/macos/screenshots/run-windows-installer.gif)
+
+---
+
+## Testing Your Environment
+
+1. Enter the development environment by opening **Cmder** and run the following commands. You should see an HTML document that includes a success message. If you are prompted for a password, type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
+```shell
+sudo service apache2 start
+sudo service mysql start
+http localhost
+```
+2. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
+3. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.
