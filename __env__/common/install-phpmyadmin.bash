@@ -38,7 +38,7 @@ cat << EOF > /etc/apache2/sites-available/000-default.conf
   DocumentRoot /home/dev/lfz
 
   <Directory /home/dev/lfz/>
-    Options Indexex FollowSymLinks
+    Options Indexes FollowSymLinks
     AllowOverride None
     Require all granted
   </Directory>
