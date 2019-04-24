@@ -76,8 +76,9 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 1. Open the `lfz-dev` folder on your Desktop.
 2. Open the `__env__` folder within.
-3. Open `cmder.zip` and drag the folder inside to your Desktop.
-4. Open the `cmder` folder on your Desktop and pin **Cmder** to your Taskbar.
+3. Open the `windows` folder within.
+4. Open `cmder.zip` and drag the folder inside to your Desktop.
+5. Open the `cmder` folder on your Desktop and pin **Cmder** to your Taskbar.
 
 ![Unzip Cmder](__env__/windows/screenshots/unzip-cmder.gif)
 
