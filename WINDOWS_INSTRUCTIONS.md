@@ -65,8 +65,7 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 1. Download the installation files <a href="https://github.com/Learning-Fuze/lfz-dev/archive/master.zip" target="_blank">here</a>.
 2. Open the downloaded `lfz-dev-master.zip`
-    - Open the `lfz-dev-master` folder inside.
-    - Drag the `lfz-dev-master` folder inside _there_ to your Desktop.
+    - Drag the `lfz-dev-master` folder inside to your Desktop.
     - Rename the `lfz-dev-master` folder on your Desktop to simply `lfz-dev`.
 
 ![Download Installer](__env__/windows/screenshots/download-installer.gif)
