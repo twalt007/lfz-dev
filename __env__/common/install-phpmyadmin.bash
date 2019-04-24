@@ -25,10 +25,24 @@ DEBIAN_FRONTEND=noninteractive apt-get -yq install \
 service mysql stop && \
 fix-phpmyadmin && \
 fix-apache2 && \
-echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
 echo "error_reporting = E_ALL" >> /etc/php/7.2/apache2/php.ini && \
 echo "display_errors = On" >> /etc/php/7.2/apache2/php.ini && \
-sudo bash -c "echo extension=/usr/lib/php/20170718/mcrypt.so > /etc/php/7.2/cli/conf.d/mcrypt.ini" && \
-sudo bash -c "echo extension=/usr/lib/php/20170718/mcrypt.so > /etc/php/7.2/apache2/conf.d/mcrypt.ini" && \
-rm -rf /var/www/html/ && \
-ln -s /home/dev/lfz /var/www/html
+echo "extension=/usr/lib/php/20170718/mcrypt.so" > /etc/php/7.2/cli/conf.d/mcrypt.ini && \
+echo "extension=/usr/lib/php/20170718/mcrypt.so" > /etc/php/7.2/apache2/conf.d/mcrypt.ini && \
+cat << EOF > /etc/apache2/sites-available/000-default.conf
+<VirtualHost *:80>
+
+  ServerName localhost
+  ServerAdmin webmaster@localhost
+  DocumentRoot /home/dev/lfz
+
+  <Directory /home/dev/lfz/>
+    Options Indexex FollowSymLinks
+    AllowOverride None
+    Require all granted
+  </Directory>
+
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+EOF
