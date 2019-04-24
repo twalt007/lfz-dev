@@ -25,7 +25,7 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ## Enabling Windows Subsytem for Linux
 
-1. Open the Control Panel app.
+1. Open the **Control Panel** app.
 2. Click on **Programs**.
 3. Under **Programs and Features** click **"Turn Windows features on or off"**.
 4. In a few moments, a list of checkboxes will appear.<br/>
@@ -38,7 +38,7 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ## Installing Ubuntu 18.04
 
-1. Open the Windows Store app.
+1. Open the **Microsoft Store** app.
 2. Search for Ubuntu and Choose **Ubuntu 18.04 LTS**.
 3. On the **Ubuntu 18.04** app page click the **Get** or **Install** button.
 4. If you are prompted to sign in, you can just close the sign in window.
@@ -113,7 +113,7 @@ To check your available disk space, open **File Explorer** and click on **This P
     ```shell
     http localhost
     ```
-    An HTML document should print out in the terminal that includes **"Connected to MySQL successfully!"**.
+    An HTML document should print out that includes **"Connected to MySQL successfully!"**.
 
 ![Testing the Environment](__env__/windows/screenshots/testing-environment.gif)
 
