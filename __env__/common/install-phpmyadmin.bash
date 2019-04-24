@@ -29,6 +29,7 @@ echo "error_reporting = E_ALL" >> /etc/php/7.2/apache2/php.ini && \
 echo "display_errors = On" >> /etc/php/7.2/apache2/php.ini && \
 echo "extension=/usr/lib/php/20170718/mcrypt.so" > /etc/php/7.2/cli/conf.d/mcrypt.ini && \
 echo "extension=/usr/lib/php/20170718/mcrypt.so" > /etc/php/7.2/apache2/conf.d/mcrypt.ini && \
+a2enmod rewrite && \
 cat << EOF > /etc/apache2/sites-available/000-default.conf
 <VirtualHost *:80>
 
