@@ -100,3 +100,52 @@ To check your available disk space, open **File Explorer** and click on **This P
 ---
 
 ## Testing Your Environment
+
+1. Reopen **Cmder**, type the following, command and press `Enter`.
+    ```shell
+    sudo service apache2 start
+    ```
+2. Type the following command and press `Enter`.
+    ```shell
+    sudo service mysql start
+    ```
+3. Once `apache2` and `mysql` are successfully started, type the following command and press `Enter`.
+    ```shell
+    http localhost
+    ```
+    An HTML document should print out in the terminal that includes **"Connected to MySQL successfully!"**.
+
+![Testing the Environment](__env__/windows/screenshots/testing-environment.gif)
+
+4. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
+5. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.
+
+![Testing the Environment](__env__/windows/screenshots/web-environment.gif)
+
+---
+
+## Done!
+
+Your development environment is ready!
+
+The Apache Web Server and MySQL Database Server are not started automatically when you enter the development environment via **Cmder**. They may already be running, but you'll want to learn the following commands to check, start, or stop them.
+
+```shell
+# to check if Apache is started
+sudo service apache2 status
+
+# to start Apache
+sudo service apache2 start
+
+# to stop Apache
+sudo service apache2 stop
+
+# to check if MySQL is started
+sudo service mysql status
+
+# to start MySQL
+sudo service mysql start
+
+# to stop MySQL
+sudo service mysql stop
+```
