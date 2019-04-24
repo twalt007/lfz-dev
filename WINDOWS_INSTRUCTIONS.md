@@ -86,13 +86,14 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ## Setting Up the Environment
 
-1. Open **Cmder** and copy in the following command. You can right-click the Cmder prompt to paste it in. Then press `Enter`.
+1. Open **Cmder**. If you receive a warning about **ConEmu**, then click **Unblock and Continue**.
+2. Paste the following command into **Cmder**. You can right-click the Cmder prompt to paste it in. Then press `Enter`.
     ```bash
     sudo bash $(echo $(wslpath $(cmd.exe /C "echo %USERPROFILE%\Desktop\lfz-dev\__env__\windows\install.bash")) | tr -d '\r')
     ```
-2. If you are prompted for a password, then type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
-3. Good job! You can take a break, 'cause this may take a while!
-4. Once installation is complete, close **Cmder**.
+3. If you are prompted for a password, then type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
+4. Good job! You can take a break, 'cause this may take a while!
+5. Once installation is complete, close **Cmder**.
 
 ![Running the Windows installer](__env__/windows/screenshots/run-windows-installer.gif)
 
