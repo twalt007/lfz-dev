@@ -38,9 +38,7 @@ Students using Windows will be running their environment in [Windows Subsystem f
 - 8 GB RAM
 - 10 GB free disk space
 
-## Getting Ready
-
-Both sets of instructions assume that students have a folder on their Desktop named **`lfz`** to hold their LearningFuze code repositories. Before beginning, ensure that this folder is present.
+## Installation
 
 [See setup instructions for Mac](MAC_INSTRUCTIONS.md)
 
