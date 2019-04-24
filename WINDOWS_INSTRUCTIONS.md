@@ -92,18 +92,10 @@ To check your available disk space, open **File Explorer** and click on **This P
     ```
 2. If you are prompted for a password, then type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
 3. Good job! You can take a break, 'cause this may take a while!
+4. Once installation is complete, close **Cmder**.
 
-![Running the Windows installer](__env__/macos/screenshots/run-windows-installer.gif)
+![Running the Windows installer](__env__/windows/screenshots/run-windows-installer.gif)
 
 ---
 
 ## Testing Your Environment
-
-1. Enter the development environment by opening **Cmder** and run the following commands. You should see an HTML document that includes a success message. If you are prompted for a password, type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
-```shell
-sudo service apache2 start
-sudo service mysql start
-http localhost
-```
-2. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
-3. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.

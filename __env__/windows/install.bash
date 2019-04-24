@@ -22,6 +22,7 @@ EOF
 mkdir -p $windows_home/lfz
 ln -sf $windows_home/lfz /home/dev/lfz
 ln -sf $windows_home/Desktop /home/dev/Desktop
+cp $windows_home/Desktop/lfz-dev/*.php $windows_home/lfz
 
 mkdir -p /tmp/setup
 cp /home/dev/Desktop/lfz-dev/__env__/common/*.bash /tmp/setup
