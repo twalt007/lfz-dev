@@ -27,7 +27,9 @@ Information about your computer can be found by opening the apple () menu and
 4. If prompted, continue opening Docker and provide the password you use to log into your Mac.
 5. Within a few moments, the status bar at the top-right of your screen should have a Docker whale icon in it.
 6. Click on the Docker whale icon to check that "**Docker Desktop is running**".
-7. Then click "**Preferences...**" and ensure that "**Start Docker Desktop when you log in**" is _checked_ and "**Automatically check for updates**" is _unchecked_.
+7. Then click "**Preferences...**" and ensure that:
+    - "**Start Docker Desktop when you log in**" is _checked_ and
+    - "**Automatically check for updates**" is _unchecked_.
 
 ![Install Docker](__env__/macos/screenshots/install-docker-app.gif)
 ![Docker in status bar](__env__/macos/screenshots/docker-in-status-bar.png)
