@@ -52,13 +52,15 @@ services:
       - 3000:3000
       - 3001:3001
     volumes:
-      - env_storage
+      - dev_home:/home/dev
+      - dev_data:/var/lib/mysql/
       - $HOME/Desktop:/home/dev/Desktop
       - $HOME/lfz:/home/dev/lfz
     command: ["tail", "-f", "/dev/null"]
 
 volumes:
-  env_storage:
+  dev_data:
+  dev_home:
 
 EOF
 
