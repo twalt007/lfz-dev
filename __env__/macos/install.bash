@@ -5,26 +5,19 @@ command -v docker-compose > /dev/null 2>&1 || {
   exit 1
 }
 
-desktop_path="$HOME/Desktop"
-lfz_path="$desktop_path/lfz"
-
-if [ ! -d $lfz_path ]; then
-  echo -e "\nNo lfz folder found on your Desktop!"
-  echo -e "Be sure it exists before trying again."
-  echo -e "Aborting..."
-  exit 1
-fi
-
+lfz_path="$HOME/lfz"
 local_bin_path="$HOME/.local/bin"
 bash_profile_path="$HOME/.bash_profile"
 
 touch $bash_profile_path
 mkdir -p $local_bin_path
+mkdir -p $lfz_path
 
 if [ $(grep -c 'export PATH="\$PATH:\$HOME/.local/bin"' $bash_profile_path) -eq "0" ]; then
   echo -e '\nexport PATH="$PATH:$HOME/.local/bin"' >> $bash_profile_path
 fi
 
+desktop_path="$HOME/Desktop"
 lfz_dev_path="$desktop_path/lfz-dev"
 
 cp -R $lfz_dev_path/__env__ $lfz_dev_path/*.php $lfz_path/
@@ -40,7 +33,38 @@ sleep 1
 
 echo -e "\nGetting things started. This may take a while!"
 
-sleep 1
+cat << EOF > $HOME/lfz/__env__/docker/lfz/docker-compose.yml
 
-docker-compose -f $compose_file_path build > $desktop_path/lfz-dev-install.log && \
+version: '3.7'
+
+services:
+  dev:
+    build:
+      context: ../../
+      dockerfile: docker/lfz/Dockerfile
+    container_name: dev
+    stdin_open: true
+    tty: true
+    hostname: localhost
+    ports:
+      - 80:80
+      - 443:443
+      - 3000:3000
+      - 3001:3001
+    volumes:
+      - dev_home:/home/dev/
+      - dev_data:/var/lib/mysql/
+      - dev_sites:/etc/apache2/sites-available/
+      - $HOME/Desktop:/home/dev/Desktop
+      - $HOME/lfz:/home/dev/lfz
+    command: ["tail", "-f", "/dev/null"]
+
+volumes:
+  dev_data:
+  dev_home:
+  dev_sites:
+
+EOF
+
+docker-compose -f $compose_file_path build > $desktop_path/lfz-dev-install.log 2>&1 && \
 echo -e '\nDone!'

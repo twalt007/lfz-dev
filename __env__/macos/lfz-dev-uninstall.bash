@@ -1,7 +1,6 @@
 #!/bin/bash
 
-desktop_path="$HOME/Desktop"
-lfz_path="$desktop_path/lfz"
+lfz_path="$HOME/lfz"
 
 compose_file_path="$lfz_path/__env__/docker/lfz/docker-compose.yml"
 

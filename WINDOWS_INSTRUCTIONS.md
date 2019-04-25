@@ -5,8 +5,8 @@ This guide provides instructions for setting up your PC for development. Please 
 ## Double-checking System Requirements
 
 - **Windows 10** - 64-bit Home or Pro
-- 8 GB RAM
-- 10 GB free disk space
+- 8 GB or more of RAM
+- 10 GB or more of free disk space
 
 Information about your computer can be found by:
   1. Opening the **Control Panel** app
@@ -101,7 +101,7 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ## Testing Your Environment
 
-1. Reopen **Cmder**, type the following, command and press `Enter`.
+1. Reopen **Cmder**, type the following command, and press `Enter`.
     ```shell
     sudo service apache2 start
     ```
