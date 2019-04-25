@@ -52,8 +52,9 @@ services:
       - 3000:3000
       - 3001:3001
     volumes:
-      - dev_home:/home/dev
+      - dev_home:/home/dev/
       - dev_data:/var/lib/mysql/
+      - dev_sites:/etc/apache2/sites-available/
       - $HOME/Desktop:/home/dev/Desktop
       - $HOME/lfz:/home/dev/lfz
     command: ["tail", "-f", "/dev/null"]
@@ -61,6 +62,7 @@ services:
 volumes:
   dev_data:
   dev_home:
+  dev_sites:
 
 EOF
 
