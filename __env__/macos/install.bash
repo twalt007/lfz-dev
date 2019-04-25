@@ -62,5 +62,5 @@ volumes:
 
 EOF
 
-docker-compose -f $compose_file_path build > $desktop_path/lfz-dev-install.log && \
+docker-compose -f $compose_file_path build > $desktop_path/lfz-dev-install.log 2>&1 && \
 echo -e '\nDone!'
