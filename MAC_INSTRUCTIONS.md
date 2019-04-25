@@ -5,8 +5,8 @@ This guide provides instructions for setting up your Mac for development. Please
 ## Double-checking System Requirements
 
 - **MacOS Version 10.12** or later
-- 8 GB RAM
-- 10 GB free disk space
+- 8 GB or more RAM
+- 10 GB or more free disk space
 
 Information about your computer can be found by opening the apple () menu and clicking "About This Mac". To see the available disk space, click the "Storage" tab.
 
@@ -21,7 +21,7 @@ Information about your computer can be found by opening the apple () menu and
 
 **Note:** Creating a DockerHub account is not required to install and use Docker. You can safely ignore or dismiss all prompts to sign into DockerHub.
 
-1. Download **Docker for Mac** at <a href="https://download.docker.com/mac/stable/31259/Docker.dmg" _target="blank">https://download.docker.com/mac/stable/31259/Docker.dmg</a>
+1. Download **Docker for Mac** <a href="https://download.docker.com/mac/stable/31259/Docker.dmg" _target="blank">here</a>.
 2. Install Docker by opening the `.dmg` file you just downloaded and dragging Docker to your Applications. Then close the installer window.
 3. Open your Applications folder in Finder and open the Docker application.
 4. If prompted, continue opening Docker and provide the password you use to log into your Mac.
@@ -37,7 +37,7 @@ Information about your computer can be found by opening the apple () menu and
 ## Getting the Environment Installer
 
 1. Download the installation files <a href="https://github.com/Learning-Fuze/lfz-dev/archive/master.zip" target="_blank">here</a>.
-2. Move the downloaded zip file to your Desktop and unzip it.
+2. Move the downloaded `lfz-dev-master.zip` file to your Desktop and open it.
 3. Rename the unzipped folder to `lfz-dev`.
 
 ![Unzip the Mac Installer](__env__/macos/screenshots/download-installer.gif).
@@ -47,41 +47,48 @@ Information about your computer can be found by opening the apple () menu and
 ## Setting Up the Environment
 
 1. Open a new Terminal window by pressing `Command (⌘) + Space`, typing Terminal, and pressing `Enter`.
-3. Paste the following command into your Terminal and press `Enter`. This may take a while!
+2. Paste the following command into your Terminal and press `Enter`. Great job! You can take a break now. This may take a while!
+    ```bash
+    bash ~/Desktop/lfz-dev/__env__/macos/install.bash
+    ```
+3. Once installation is complete, close Terminal.
 
-```bash
-bash ~/Desktop/lfz-dev/__env__/macos/install.bash
-```
 ![Running the Mac installer](__env__/macos/screenshots/run-mac-installer.gif)
 
 ---
 
 ## Entering and Exiting the Development Environment
 
-1. Close your Terminal window.
-2. Open a new Terminal window by pressing `Command (⌘) + Space`, typing Terminal, and pressing `Enter`.
-3. Type `lfz-dev` and press enter. Your prompt should change.
-4. Type `whoami` and press `Enter`. The output should be `dev`.
-5. Type `ls` and press `Enter`. The output should include `Desktop`.
-6. Type `exit` and press `Enter` to exit the development environment and return to your normal Terminal session.
-7. To return to the development environment, type `lfz-dev` and press `Enter`.
+1. Open a new Terminal window by pressing `Command (⌘) + Space`, typing Terminal, and pressing `Enter`.
+2. Type `lfz-dev` and press enter. Your prompt should change to `~ λ`.
+4. Type `exit` and press `Enter` to exit the development environment and return to your normal Terminal session.
+5. To return to the development environment, type `lfz-dev` and press `Enter`.
 
-![Entering Development Environment](__env__/macos/screenshots/entering-dev-env.gif)
+![Entering Development Environment](__env__/macos/screenshots/entering-environment.gif)
 
 ---
 
 ## Testing Your Environment
 
-1. Enter the development environment and run the following commands. You should see an HTML document that includes a success message.
-```shell
-sudo service apache2 start
-sudo service mysql start
-http localhost
-```
-2. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
-3. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.
+1. Within your development environment, type the following command, and press `Enter`.
+    ```shell
+    sudo service apache2 start
+    ```
+2. Type the following command and press `Enter`.
+    ```shell
+    sudo service mysql start
+    ```
+3. Once `apache2` and `mysql` are successfully started, type the following command and press `Enter`.
+    ```shell
+    http localhost
+    ```
+    An HTML document should print out that includes **"Connected to MySQL successfully!"**.
 
-![Testing the Environment](__env__/macos/screenshots/test-env.gif)
+![Testing the Environment](__env__/macos/screenshots/test-environment.gif)
+
+4. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
+5. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.
+
 ![Testing the Environment](__env__/macos/screenshots/env-web.gif)
 
 ---
