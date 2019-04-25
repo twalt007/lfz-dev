@@ -33,7 +33,34 @@ sleep 1
 
 echo -e "\nGetting things started. This may take a while!"
 
-sleep 1
+cat << EOF > $HOME/lfz/__env__/docker/lfz/docker-compose.yml
+
+version: '3.7'
+
+services:
+  dev:
+    build:
+      context: ../../
+      dockerfile: docker/lfz/Dockerfile
+    container_name: dev
+    stdin_open: true
+    tty: true
+    hostname: localhost
+    ports:
+      - 80:80
+      - 443:443
+      - 3000:3000
+      - 3001:3001
+    volumes:
+      - env_storage
+      - $HOME/Desktop:/home/dev/Desktop
+      - $HOME/lfz:/home/dev/lfz
+    command: ["tail", "-f", "/dev/null"]
+
+volumes:
+  env_storage:
+
+EOF
 
 docker-compose -f $compose_file_path build > $desktop_path/lfz-dev-install.log && \
 echo -e '\nDone!'
