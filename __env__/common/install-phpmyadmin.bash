@@ -20,8 +20,8 @@ echo "phpmyadmin phpmyadmin/mysql/app-pass password root" | debconf-set-selectio
 echo "phpmyadmin phpmyadmin/app-password-confirm password root" | debconf-set-selections && \
 echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | debconf-set-selections && \
 DEBIAN_FRONTEND=noninteractive apt-get -yq install \
-  libmcrypt-dev=2.5.8-3.3 \
-  phpmyadmin=4:4.6.6-5 && \
+  libmcrypt-dev \
+  phpmyadmin && \
 service mysql stop && \
 fix-phpmyadmin && \
 fix-apache2 && \

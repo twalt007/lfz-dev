@@ -1,6 +1,6 @@
 credential_cache_timeout=86400
 
-apt-get install -y git=1:2.17.1-1ubuntu0.4
+apt-get install -y git
 
 git config --global core.editor nano
 git config --global credential.helper "cache --timeout=$credential_cache_timeout"
