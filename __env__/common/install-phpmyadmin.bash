@@ -26,8 +26,6 @@ service mysql stop && \
 fix-phpmyadmin && \
 fix-apache2 && \
 echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf && \
-echo "error_reporting = E_ALL" >> /etc/php/7.2/apache2/php.ini && \
-echo "display_errors = On" >> /etc/php/7.2/apache2/php.ini && \
 echo "extension=/usr/lib/php/20170718/mcrypt.so" > /etc/php/7.2/cli/conf.d/mcrypt.ini && \
 echo "extension=/usr/lib/php/20170718/mcrypt.so" > /etc/php/7.2/apache2/conf.d/mcrypt.ini && \
 a2enmod rewrite && \
