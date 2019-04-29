@@ -6,10 +6,10 @@ echo -e "\nGetting things started. This may take a while!"
 
 apt-get -qq update && \
 apt-get install -y --reinstall \
-  locales=2.27-3ubuntu1 \
-  nano=2.9.3-2 \
-  sudo=1.8.21p2-3ubuntu1 \
-  telnet=0.17-41 > $windows_home/Desktop/lfz-dev-install.log 2>&1 && \
+  locales \
+  nano \
+  sudo \
+  telnet > $windows_home/Desktop/lfz-dev-install.log 2>&1 && \
   echo "dev ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/dev && \
   chmod 440 /etc/sudoers.d/dev
 

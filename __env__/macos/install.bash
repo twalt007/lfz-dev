@@ -54,15 +54,17 @@ services:
     volumes:
       - dev_home:/home/dev/
       - dev_data:/var/lib/mysql/
-      - dev_sites:/etc/apache2/sites-available/
+      - dev_web:/etc/apache2/
+      - dev_php:/etc/php/
       - $HOME/Desktop:/home/dev/Desktop
       - $HOME/lfz:/home/dev/lfz
     command: ["tail", "-f", "/dev/null"]
 
 volumes:
+  dev_web:
+  dev_php:
   dev_data:
   dev_home:
-  dev_sites:
 
 EOF
 
