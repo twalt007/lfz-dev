@@ -1,7 +1,12 @@
 FROM ubuntu:18.04
 
+RUN rm /etc/dpkg/dpkg.cfg.d/excludes
+
 RUN apt-get -qq update && \
-    apt-get install -y \
+    apt-get install -y man && \
+    dpkg -l | grep ^ii | cut -d' ' -f3 | xargs apt-get install -y --reinstall
+
+RUN apt-get install -y \
       locales \
       nano \
       sudo \
