@@ -10,7 +10,7 @@ mkdir -p /home/dev/.local
 dir=$(dirname $BASH_SOURCE)
 
 announce "Installing HTTP clients..."
-source $dir/install-http-clients.bash
+source $dir/install-network-tools.bash
 
 announce "Installing Git..."
 source $dir/install-git.bash
