@@ -20,7 +20,6 @@ ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 COPY common/*.bash /setup/
 COPY common/.profile /home/dev/.profile
-COPY common/mcrypt.so /usr/lib/php/20170718/mcrypt.so
 
 USER dev
 

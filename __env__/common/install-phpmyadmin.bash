@@ -41,14 +41,11 @@ EOF
   echo "phpmyadmin phpmyadmin/app-password-confirm password root" | debconf-set-selections && \
   echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | debconf-set-selections && \
   DEBIAN_FRONTEND=noninteractive apt-get -yq install \
-    libmcrypt-dev \
     phpmyadmin && \
   service mysql stop && \
   fix-phpmyadmin && \
   fix-apache2 && \
   echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf && \
-  echo "extension=/usr/lib/php/20170718/mcrypt.so" > /etc/php/7.2/cli/conf.d/mcrypt.ini && \
-  echo "extension=/usr/lib/php/20170718/mcrypt.so" > /etc/php/7.2/apache2/conf.d/mcrypt.ini && \
   a2enmod rewrite && \
   echo "$default_vhost" > /etc/apache2/sites-available/000-default.conf
 }

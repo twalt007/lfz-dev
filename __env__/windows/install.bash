@@ -29,10 +29,8 @@ cp $desktop_path/lfz-dev/*.php $windows_home/lfz/
 
 mkdir -p /tmp/setup
 cp /home/dev/Desktop/lfz-dev/__env__/common/*.bash /tmp/setup
-cp /home/dev/Desktop/lfz-dev/__env__/common/mcrypt.so /tmp/setup
 
 mkdir -p /usr/lib/php/20170718
-mv /tmp/setup/mcrypt.so /usr/lib/php/20170718/mcrypt.so
 
 bash /tmp/setup/install.bash 2>&1 | tee $desktop_path/lfz-dev-install.log
 
