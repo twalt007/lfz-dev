@@ -29,10 +29,6 @@ cat $(dirname $BASH_SOURCE)/lfz-dev-stop.bash > $local_bin_path/lfz-dev-stop
 cat $(dirname $BASH_SOURCE)/lfz-dev-uninstall.bash > $local_bin_path/lfz-dev-uninstall
 chmod +x $local_bin_path/lfz-dev*
 
-sleep 1
-
-echo -e "\nGetting things started. This may take a while!"
-
 cat << EOF > $HOME/lfz/__env__/docker/lfz/docker-compose.yml
 
 version: '3.7'
@@ -68,5 +64,20 @@ volumes:
 
 EOF
 
-docker-compose -f $compose_file_path build > $desktop_path/lfz-dev-install.log 2>&1 && \
-echo -e '\nDone!'
+sleep 1
+
+echo -e '\n\n\n\n\n'
+echo "Getting things started. This may take a while!"
+echo -e '\n\n\n\n\n'
+
+sleep 2
+
+docker-compose -f $compose_file_path build 2>&1 | tee $desktop_path/lfz-dev-install.log
+
+if [ ${PIPESTATUS[0]} -eq 0 ]; then
+  echo -e '\nDone!\nDevelopment environment setup succeeded!\n'
+  exit 0
+fi
+
+echo -e '\nDevelopment environment setup failed :(\n'
+exit 1

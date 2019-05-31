@@ -13,7 +13,7 @@ This repository contains installation instructions for setting up a development 
 - MySQL 5.7 Database Server
 - phpMyAdmin Web Admin for MySQL
 - Node.js 10
-- Telnet TCP Client
+- Telnet, Ping, and Traceroute network utilities
 - HTTPie Command Line HTTP Client
 - SSH Client
 - Preconfigured Cmder Console Emulator (Windows)

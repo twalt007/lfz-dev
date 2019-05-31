@@ -10,7 +10,7 @@ RUN apt-get install -y \
       locales \
       nano \
       sudo \
-      telnet && \
+      bash-completion && \
     useradd -m -s /bin/bash -G sudo dev && \
     echo "dev ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/dev && \
     chmod 0440 /etc/sudoers.d/dev
