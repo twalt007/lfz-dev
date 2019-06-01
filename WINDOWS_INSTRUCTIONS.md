@@ -51,6 +51,8 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ## Creating a User Account in Ubuntu
 
+**Note**: The username and password must be entered as follows for successful setup.
+
 1. When Ubuntu is ready, it will prompt you to **Enter new UNIX username**.
 2. Type `dev` and press `Enter`.
 3. You will then be asked to choose a password. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.<br/> Type `lfz` and press `Enter`.
