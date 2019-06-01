@@ -25,6 +25,8 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ## Enabling Windows Subsytem for Linux
 
+**Note**: If you have trouble finding **Control Panel** or  **Turn Windows features on or off** you can usually search for them by pressing `Win + S`.
+
 1. Open the **Control Panel** app.
 2. Click on **Programs**.
 3. Under **Programs and Features** click **"Turn Windows features on or off"**.
