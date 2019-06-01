@@ -118,7 +118,7 @@ To check your available disk space, open **File Explorer** and click on **This P
 ![Testing the Environment](__env__/windows/screenshots/testing-environment.gif)
 
 4. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
-5. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.
+5. Open a new tab in your web browser, go to `http://localhost/phpmyadmin`, and log in with the username `root` and the password `root`.
 
 ![Testing the Environment](__env__/windows/screenshots/web-environment.gif)
 

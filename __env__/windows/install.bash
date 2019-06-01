@@ -23,14 +23,13 @@ export LC_ALL='en_US.UTF-8'
 EOF
 
 mkdir -p $windows_home/lfz
+chown -R dev:dev $windows_home/lfz
 ln -s $windows_home/lfz /home/dev/lfz
 ln -s $desktop_path /home/dev/Desktop
 cp $desktop_path/lfz-dev/*.php $windows_home/lfz/
 
 mkdir -p /tmp/setup
 cp /home/dev/Desktop/lfz-dev/__env__/common/*.bash /tmp/setup
-
-mkdir -p /usr/lib/php/20170718
 
 bash /tmp/setup/install.bash 2>&1 | tee $desktop_path/lfz-dev-install.log
 
