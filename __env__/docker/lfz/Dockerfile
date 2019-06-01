@@ -10,7 +10,7 @@ RUN apt-get install -y \
       locales \
       nano \
       sudo \
-      telnet && \
+      bash-completion && \
     useradd -m -s /bin/bash -G sudo dev && \
     echo "dev ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/dev && \
     chmod 0440 /etc/sudoers.d/dev
@@ -20,7 +20,6 @@ ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 COPY common/*.bash /setup/
 COPY common/.profile /home/dev/.profile
-COPY common/mcrypt.so /usr/lib/php/20170718/mcrypt.so
 
 USER dev
 

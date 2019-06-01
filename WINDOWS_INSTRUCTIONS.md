@@ -25,6 +25,8 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ## Enabling Windows Subsytem for Linux
 
+**Note**: If you have trouble finding **Control Panel** or  **Turn Windows features on or off** you can usually search for them by pressing `Win + S`.
+
 1. Open the **Control Panel** app.
 2. Click on **Programs**.
 3. Under **Programs and Features** click **"Turn Windows features on or off"**.
@@ -50,6 +52,8 @@ To check your available disk space, open **File Explorer** and click on **This P
 ---
 
 ## Creating a User Account in Ubuntu
+
+**Note**: The username and password must be entered as follows for successful setup.
 
 1. When Ubuntu is ready, it will prompt you to **Enter new UNIX username**.
 2. Type `dev` and press `Enter`.
@@ -89,7 +93,7 @@ To check your available disk space, open **File Explorer** and click on **This P
 1. Open **Cmder**. If you receive a warning about **ConEmu**, then click **Unblock and Continue**.
 2. Paste the following command into **Cmder**. You can right-click the Cmder prompt to paste it in. Then press `Enter`.
     ```bash
-    sudo bash $(echo $(wslpath $(cmd.exe /C "echo %USERPROFILE%\Desktop\lfz-dev\__env__\windows\install.bash")) | tr -d '\r')
+    sudo bash "$(wslpath "$(cmd.exe /C "echo %USERPROFILE%\Desktop\lfz-dev\__env__\windows\install.bash")" | tr -d '\r')"
     ```
 3. If you are prompted for a password, then type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
 4. Good job! You can take a break, 'cause this may take a while!
@@ -118,7 +122,7 @@ To check your available disk space, open **File Explorer** and click on **This P
 ![Testing the Environment](__env__/windows/screenshots/testing-environment.gif)
 
 4. Open your web browser and go to `http://localhost`. You should see the same HTML document, but presented to you as a web page.
-5. Open a new tab in your web browser and go to `http://localhost/phpmyadmin` and log in with the username `root` and the password `root`.
+5. Open a new tab in your web browser, go to `http://localhost/phpmyadmin`, and log in with the username `root` and the password `root`.
 
 ![Testing the Environment](__env__/windows/screenshots/web-environment.gif)
 

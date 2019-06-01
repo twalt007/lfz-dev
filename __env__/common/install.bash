@@ -1,27 +1,32 @@
-announce() {
-  echo -e "\n\n\n\n\n"
-  echo $1
-  echo -e "\n\n\n\n\n"
-  sleep 2;
+__dirname=$(dirname $BASH_SOURCE)
+source $__dirname/install-git.bash
+source $__dirname/install-network-tools.bash
+source $__dirname/install-mysql.bash
+source $__dirname/install-phpmyadmin.bash
+source $__dirname/install-node.bash
+
+function announce() {
+  echo -e '\n\n\n\n\n'
+  echo "Setting up $1..."
+  echo -e '\n\n\n\n\n'
+  sleep 2
+}
+
+function bail() {
+  echo "Failed to set up $1... exiting." 1>&2
+  exit 1
 }
 
 mkdir -p /home/dev/.local
 
-dir=$(dirname $BASH_SOURCE)
+announce "network tools" && install-network-tools || bail "network tools"
 
-announce "Installing HTTP clients..."
-source $dir/install-network-tools.bash
+announce "Git" && install-git || bail "Git"
 
-announce "Installing Git..."
-source $dir/install-git.bash
+announce "MySQL" && install-mysql || bail "MySQL"
 
-announce "Installing MySQL..."
-source $dir/install-mysql.bash
+announce "Apache and phpMyAdmin" && install-phpmyadmin || bail "Apache and phpMyAdmin"
 
-announce "Installing Apache and phpMyAdmin..."
-source $dir/install-phpmyadmin.bash
-
-announce "Installing Node.js..."
-source $dir/install-node.bash
+announce "Node.js" && install-node || bail "Node.js"
 
 chown -R dev:dev /home/dev
