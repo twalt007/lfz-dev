@@ -38,6 +38,29 @@ To check your available disk space, open **File Explorer** and click on **This P
 
 ---
 
+## Getting the Environment Installer
+
+1. Download the installation files <a href="https://github.com/Learning-Fuze/lfz-dev/archive/master.zip" target="_blank">here</a>.
+2. Open the downloaded `lfz-dev-master.zip`
+    - Drag the `lfz-dev-master` folder inside to your Desktop.
+    - Rename the `lfz-dev-master` folder on your Desktop to simply `lfz-dev`.
+
+![Download Installer](__env__/windows/screenshots/download-installer.gif)
+
+---
+
+## Setting Up Cmder
+
+1. Open the `lfz-dev` folder on your Desktop.
+2. Open the `__env__` folder within.
+3. Open the `windows` folder within.
+4. Open `cmder.zip` and drag the folder inside to your Desktop.
+5. Open the `cmder` folder on your Desktop and pin **Cmder** to your Taskbar.
+
+![Unzip Cmder](__env__/windows/screenshots/unzip-cmder.gif)
+
+---
+
 ## Installing Ubuntu 18.04
 
 1. Open the **Microsoft Store** app.
@@ -62,29 +85,6 @@ To check your available disk space, open **File Explorer** and click on **This P
 5. Close **Ubuntu**.
 
 ![Ubuntu User](__env__/windows/screenshots/ubuntu-user.gif)
-
----
-
-## Getting the Environment Installer
-
-1. Download the installation files <a href="https://github.com/Learning-Fuze/lfz-dev/archive/master.zip" target="_blank">here</a>.
-2. Open the downloaded `lfz-dev-master.zip`
-    - Drag the `lfz-dev-master` folder inside to your Desktop.
-    - Rename the `lfz-dev-master` folder on your Desktop to simply `lfz-dev`.
-
-![Download Installer](__env__/windows/screenshots/download-installer.gif)
-
----
-
-## Setting Up Cmder
-
-1. Open the `lfz-dev` folder on your Desktop.
-2. Open the `__env__` folder within.
-3. Open the `windows` folder within.
-4. Open `cmder.zip` and drag the folder inside to your Desktop.
-5. Open the `cmder` folder on your Desktop and pin **Cmder** to your Taskbar.
-
-![Unzip Cmder](__env__/windows/screenshots/unzip-cmder.gif)
 
 ---
 
