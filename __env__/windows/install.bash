@@ -42,6 +42,8 @@ cp /home/dev/Desktop/lfz-dev/__env__/common/*.bash /tmp/setup
 bash /tmp/setup/install.bash 2>&1 | tee -a "$desktop_path/lfz-dev-install.log"
 
 if [ ${PIPESTATUS[0]} -eq 0 ]; then
+  mv "$desktop_path/lfz-dev" "$windows_home/lfz/lfz-dev"
+  mv "$desktop_path/lfz-dev-install.log" "$windows_home/lfz/lfz-dev-install.log"
   echo -e '\nDone!\nDevelopment environment setup succeeded!\n'
   exit 0
 fi

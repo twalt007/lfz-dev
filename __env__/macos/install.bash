@@ -75,6 +75,8 @@ sleep 2
 docker-compose -f $compose_file_path build 2>&1 | tee $desktop_path/lfz-dev-install.log
 
 if [ ${PIPESTATUS[0]} -eq 0 ]; then
+  mv "$lfz_dev_path" "$lfz_path/lfz-dev"
+  mv "$desktop_path/lfz-dev-install.log" "$lfz_path/lfz-dev-install.log"
   echo -e '\nDone!\nDevelopment environment setup succeeded!\n'
   exit 0
 fi
