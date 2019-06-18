@@ -2,6 +2,14 @@
 
 This guide provides instructions for setting up your PC for development. Please note that although many parts of the instructions include helpful images an animations, the instructions **must** be read and followed step-by-step to ensure correct setup.
 
+## ❗️Kaspersky Anti-Virus Note ❗️
+
+Kaspersky Lab Anti-Virus has been known to cause problems with Windows Subsystem for Linux. Specifically, it blocks secure downloads of common tools included in this environment setup.
+
+If you are using Kasperksy Lab Anti-Virus or Internet Security Software, you must uninstall it to continue.
+
+The issue has been reported to Kaspersky Lab [here](https://community.kaspersky.com/kaspersky-internet-security-13/https-doesn-t-work-in-the-wsl-win10-442) and to Microsoft [here](https://github.com/Microsoft/WSL/issues/3761).
+
 ## Double-checking System Requirements
 
 - **Windows 10** - 64-bit Home or Pro
