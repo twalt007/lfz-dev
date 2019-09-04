@@ -6,4 +6,11 @@ function install-node() {
   http -b get $nvm_url | bash && \
   source /home/dev/.nvm/nvm.sh && \
   nvm install v10.15.3
+
+  cat << EOF > /home/dev/.config/configstore/update-notifier-npm.json
+{
+  "optOut": true,
+  "lastUpdateCheck": 1567565734333
+}
+EOF
 }
