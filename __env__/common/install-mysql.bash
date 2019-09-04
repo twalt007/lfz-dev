@@ -6,5 +6,7 @@ function install-mysql() {
     mysql-server && \
   usermod -d /var/run/mysqld/ mysql && \
   service mysql start && \
-  echo "bind-address            = 0.0.0.0" >> /etc/mysql/mysql.conf.d/mysqld.cnf
+  echo "bind-address            = 0.0.0.0" >> /etc/mysql/mysql.conf.d/mysqld.cnf && \
+  mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;" && \
+  service mysql stop
 }
