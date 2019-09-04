@@ -17,6 +17,8 @@ function bail() {
   exit 1
 }
 
+apt-get -qq update
+
 mkdir -p /home/dev/.local
 
 announce "network tools" && install-network-tools || bail "network tools"
