@@ -47,6 +47,8 @@ services:
       - 443:443
       - 3000:3000
       - 3001:3001
+      - 3306:3306
+      - 9000:9000
     volumes:
       - dev_home:/home/dev/
       - dev_data:/var/lib/mysql/
