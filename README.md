@@ -4,6 +4,8 @@ LearningFuze student development environment.
 
 This repository contains installation instructions for setting up a development environment on MacOS or Windows. Its purpose is to provide students with a consistent set of tools, irrespective of which platform their computer is running.
 
+- Maintained by: `thebearingedge`
+
 ## What's Inside
 
 - Ubuntu Linux 18.04 LTS
