@@ -35,7 +35,7 @@ A clear and concise description of what actually happened. If applicable, add sc
 #### **Additional context**
 Add any other context or screenshots about the problem here.
 
-> _After all above sections are filled out, remove the `Needs More Info` label, then assign issue to the repository maintainer._
+> _After all the above sections are filled out, remove the `Needs More Info` label, then assign issue to the repository maintainer._
 
 ---
 

@@ -1,31 +1,31 @@
 ---
-name: Tooling request
-about: Suggest a developer-facing functional tooling improvement for this project
-title: "[TESTS/DEPLOY/MISC] Pick one. then insert title here"
-labels: Tooling, Needs More Info
+name: Enhancement request
+about: Suggest a user-facing functional improvement to this project.
+title: "[NEW/INCREMENTAL/CONTENT] Pick one, then insert title here"
+labels: Enhancement, Needs More Info
 assignees: thebearingedge
 
 ---
 
-### Request
-> _To be filled out by author. Add the `Tooling` and `Needs More Info` labels. Assign issue to self on creation._
+### Enhancement Request
+> _To be filled out by author. Add the `Enhancement` and `Needs More Info` labels. Assign issue to self on creation._
 
-#### **Is your tooling request related to a problem? Please describe.**
+#### **Is your enhancement request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-#### **Is your tooling enhancement related to one or more existing features? Which one(s)?**
-Yes or No. Describe existing tooling feature(s) from a development/operations perspective, including references to related issues.
+#### **Is your enhancement related to one or more existing features? Which one(s)?**
+Yes or No. Describe existing feature(s) from a user's perspective, including references to related issues.
 
 #### **Describe the solution you'd like**
 A clear and concise description of what you want to happen.
 
 #### **Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or tooling enhancements you've considered.
+A clear and concise description of any alternative solutions or enhancements you've considered.
 
 #### **Additional context**
-Add any other context, screenshots, or design documents about the tooling enhancement request here.
+Add any other context, screenshots, or design documents about the enhancement request here.
 
-> _After all above sections are filled out, remove the `Needs More Info` label, then assign issue to the repository maintainer._
+> _After all the above sections are filled out, remove the `Needs More Info` label, then assign issue to the repository maintainer._
 
 ---
 
@@ -59,7 +59,7 @@ If the enhancement can be broken down into sub-tasks/-issues, add checklist for 
 - [ ] Check off sub-issues as they are given the `Verified` label
 - [ ] Check off sub-tasks as they are implemented and added to a pull request
 
-> _After all steps have been completed and integrated into the main development branch, add the `Ready for Testing` label, remove the `Ready for Implementation` label, and assign issue to tester for verification._
+> _After all the above steps have been completed and integrated into the main development branch, add the `Ready for Testing` label, remove the `Ready for Implementation` label, and assign issue to tester for verification._
 
 ---
 
@@ -67,8 +67,7 @@ If the enhancement can be broken down into sub-tasks/-issues, add checklist for 
 > _To be filled out by tester._
 
 Commit tested on main development branch: [commit #]
-- [ ] The affected toolchain runs without crashing.
 - [ ] Application runs without crashing.
-- [ ] Tooling Enhancement is fully implemented and meets the spec.
+- [ ] Enhancement is fully implemented and meets the spec.
 
 > _After the main development branch is verified to meet the spec, add the `Verified` label, remove the `Ready for Testing` label, then close the issue._

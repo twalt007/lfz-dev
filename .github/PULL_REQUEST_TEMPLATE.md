@@ -19,7 +19,7 @@ _Please delete options that are not relevant._
 #### **Changelog**
 - An itemized list of changes
 
-> _After this section is filled out, continue on to the next section._
+> _After this section is filled out, continue to the next section._
 
 ---
 
@@ -35,8 +35,10 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 
 #### **Pre-Review Quality Checklist:**
 
-- [ ] New and existing unit tests pass locally with my changes
+- [ ] This pull request contains the latest changes from the main development branch
+- [ ] All build files in this pull request contain the latest source code changes
 - [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass locally with my changes
 - [ ] My changes generate no new warnings
 - [ ] I have tested this change in the following browsers:
   - [ ] Chrome
@@ -50,7 +52,7 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] The overall quality of the code base is higher now than it was before this pull request
 - [ ] Any dependent changes have been merged and published in downstream modules
 
-> _After all sections are filled out, request a review from maintainers, assign to reviewers, and remove the `Needs More Info` label._
+> _After all the above sections are filled out, request a review from maintainers, assign to reviewers, and remove the `Needs More Info` label._
 
 ---
 
@@ -71,7 +73,7 @@ After all feedback has been written, if any part of the feedback requires change
 ### Adding Changes to the Pull Request
 > _To be completed by author._
 
-If adding any changes to the pull request, those changes should be uploaded to the _same_ pull request to keep all correspondance in one place. **Any pull request with a review resulting in `Requested Changes` must be fixed and re-reviewed before merge.**
+If adding any changes to the pull request, those changes should be uploaded to the _same_ pull request to keep all correspondence in one place. **Any pull request with a review resulting in `Requested Changes` must be fixed and re-reviewed before merge.**
 
 > _After all changes are applied to the pull request, re-request a review from the reviewer requesting those changes, then re-assign to the reviewer._
 

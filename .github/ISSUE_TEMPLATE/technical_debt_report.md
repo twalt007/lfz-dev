@@ -23,7 +23,7 @@ A clear and concise description of any alternative solutions or features you've 
 #### **Additional context**
 Add any other context or screenshots about the feature request here.
 
-> _After all above sections are filled out, remove the `Needs More Info` label, then assign issue to the repository maintainer._
+> _After all the above sections are filled out, remove the `Needs More Info` label, then assign issue to the repository maintainer._
 
 ---
 
@@ -57,7 +57,7 @@ If the technical debt fix can be broken down into sub-tasks/-issues, add checkli
 - [ ] Check off sub-issues as they are given the `Verified` label
 - [ ] Check off sub-tasks as they are implemented and added to a pull request
 
-> _After all steps have been completed and integrated into the main development branch, add the `Ready for Testing` label, remove the `Ready for Implementation` label, and assign issue to tester for verification._
+> _After all the above steps have been completed and integrated into the main development branch, add the `Ready for Testing` label, remove the `Ready for Implementation` label, and assign issue to tester for verification._
 
 ---
 
