@@ -59,6 +59,15 @@ If the enhancement can be broken down into sub-tasks/-issues, add checklist for 
 - [ ] Check off sub-issues as they are given the `Verified` label
 - [ ] Check off sub-tasks as they are implemented and added to a pull request
 
+#### **Opening Pull Requests**
+After the enhancement has been pushed to GitHub, open a pull request using the following URL template (filling in the compare branch name):
+```
+https://github.com/Learning-Fuze/lfz-dev/compare/dev...<COMPARE BRANCH>?assignees=thebearingedge&&expand=1&&template=enhancement.md&&labels=Enhancement+Needs%20More%20Info&&title=[NEW/INCREMENTAL/CONTENT]%20Insert%20Fix%20Title%20Here
+```
+
+#### **After Merging Pull Requests**
+After a pull request referencing this issue has been merged, check off any completed steps in the Implementation section above.
+
 > _After all the above steps have been completed and integrated into the main development branch, add the `Ready for Testing` label, remove the `Ready for Implementation` label, and assign issue to tester for verification._
 
 ---

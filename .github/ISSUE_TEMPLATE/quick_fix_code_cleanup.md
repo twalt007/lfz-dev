@@ -2,13 +2,13 @@
 name: Quick-Fix - Code Cleanup
 about: Code formatting, commented code deletion, debugging artifact removal, or other <30-minute non-functionality-modifying source code fix
 title: "[CLEANUP] QUICK-FIX: insert title here"
-labels: Technical Debt
+labels: Technical Debt, Needs More Info
 assignees: (none)
 
 ---
 
 ### Quick-Fix - Documentation
-> _To be filled out by author. Add the `Technical Debt` label. Assign issue to self on creation._
+> _To be filled out by author. Add the `Technical Debt` and `Needs More Info` labels. Assign issue to self on creation._
 
 #### **Short Description**
 In two sentences or less, describe the code mess.
@@ -16,7 +16,7 @@ In two sentences or less, describe the code mess.
 #### **Additional context**
 Add any other links, screenshots, or context about the issue here.
 
-> _After all the above sections are filled out, move on to the implementation._
+> _After all the above sections are filled out, replace the `Needs More Info` label with `Ready for Implementation`, then move on to the implementation._
 
 ---
 
