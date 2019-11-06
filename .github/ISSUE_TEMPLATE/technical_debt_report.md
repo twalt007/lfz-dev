@@ -21,7 +21,7 @@ A clear and concise description of what you want to change.
 A clear and concise description of any alternative solutions or features you've considered.
 
 #### **Additional context**
-Add any other context or screenshots about the feature request here.
+Add any other context or screenshots about the technical debt here.
 
 > _After all the above sections are filled out, remove the `Needs More Info` label, then assign issue to the repository maintainer._
 
@@ -56,6 +56,15 @@ If the technical debt fix can be broken down into sub-tasks/-issues, add checkli
 - [ ] Add checklist of sub-tasks, referencing sub-issues directly
 - [ ] Check off sub-issues as they are given the `Verified` label
 - [ ] Check off sub-tasks as they are implemented and added to a pull request
+
+#### **Opening Pull Requests**
+After a technical debt fix has been pushed to GitHub, open a pull request using the following URL template (filling in the compare branch name):
+```
+https://github.com/Learning-Fuze/lfz-dev/compare/dev...<COMPARE BRANCH>?assignees=thebearingedge&&expand=1&&template=technical_debt_paydown.md&&labels=Technical%20Debt+Needs%20More%20Info&&title=[DOCUMENTATION/CLEANUP/PERFORMANCE/MAINTAINABILITY/DEPENDENCY]%20Insert%20Title%20Here
+```
+
+#### **After Merging Pull Requests**
+After a pull request referencing this issue has been merged, check off any completed steps in the Implementation section above.
 
 > _After all the above steps have been completed and integrated into the main development branch, add the `Ready for Testing` label, remove the `Ready for Implementation` label, and assign issue to tester for verification._
 

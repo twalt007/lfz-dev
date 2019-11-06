@@ -2,13 +2,13 @@
 name: Quick-Fix - Content Update
 about: A <30-minute site content update
 title: "[CONTENT] QUICK-FIX: insert title here"
-labels: Enhancement
+labels: Enhancement, Needs More Info
 assignees: (none)
 
 ---
 
 ### Quick-Fix - Content Update
-> _To be filled out by author. Add the `Enhancement` label. Assign issue to self on creation._
+> _To be filled out by author. Add the `Enhancement` and `Needs More Info` labels. Assign issue to self on creation._
 
 #### **Short Description**
 In two sentences or less, describe the content being updated.
@@ -16,7 +16,7 @@ In two sentences or less, describe the content being updated.
 #### **Additional context**
 Add any other links, screenshots, or context about the content update here.
 
-> _After all the above sections are filled out, move on to the implementation._
+> _After all the above sections are filled out, replace the `Needs More Info` label with `Ready for Implementation`, then move on to the implementation._
 
 ---
 

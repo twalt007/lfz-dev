@@ -2,13 +2,13 @@
 name: Quick-Fix - Minor Bug
 about: A localized <30-minute bug fix with no downstream dependencies
 title: "[BUG] QUICK-FIX: insert title here"
-labels: Bug
+labels: Bug, Needs More Info
 assignees: (none)
 
 ---
 
 ### Quick-Fix - Minor Bug
-> _To be filled out by author. Add the `Bug` label. Assign issue to self on creation._
+> _To be filled out by author. Add the `Bug` and `Needs More Info` labels. Assign issue to self on creation._
 
 #### **Short Description**
 In two sentences or less, describe the bug and its fix.
@@ -16,7 +16,7 @@ In two sentences or less, describe the bug and its fix.
 #### **Additional context**
 Add any other links, screenshots, or context about the issue here.
 
-> _After all the above sections are filled out, move on to the implementation._
+> _After all the above sections are filled out, replace the `Needs More Info` label with `Ready for Implementation`, then move on to the implementation._
 
 ---
 

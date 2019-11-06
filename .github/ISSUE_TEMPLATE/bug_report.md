@@ -76,6 +76,15 @@ What was the root cause of the bug?
 #### **Prevention**
 How can this type of bug be prevented in the future?
 
+#### **Opening Pull Requests**
+After an attempted fix has been pushed to GitHub, open a pull request using the following URL template (filling in the compare branch name):
+```
+https://github.com/Learning-Fuze/lfz-dev/compare/dev...<COMPARE BRANCH>?assignees=thebearingedge&&expand=1&&template=bug_fix.md&&labels=Bug+Needs%20More%20Info&&title=[BUG]%20Insert%20Fix%20Title%20Here
+```
+
+#### **After Merging Pull Requests**
+After a pull request referencing this issue has been merged, update the implementation sections above with any new information.
+
 > _After all debugging has been completed and integrated into the main development branch, add the `Ready for Testing` label, remove the `Ready for Implementation` label, and assign issue to tester for verification._
 
 ---

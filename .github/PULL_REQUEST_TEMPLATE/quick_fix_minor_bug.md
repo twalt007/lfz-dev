@@ -37,7 +37,7 @@ Fixes [ISSUE REFERENCE #]
 
 #### **Review Checklist**
 Start a review, using the checklist below as a guideline. Comment on any problem you notice. Only check off items if there are no problems that need to be fixed related to them.
-- [ ] On examination of the cleaned up code, there are no obvious problems that will arise as a result of these changes.
+- [ ] On examination of the fix code, there are no obvious problems that will arise as a result of these changes.
 
 After all feedback has been written, if any part of the feedback requires changes, conclude the review with `Changes Requested`, and re-assign the pull request to its author.
 

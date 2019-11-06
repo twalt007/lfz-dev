@@ -1,20 +1,18 @@
 
 ### Content
-> _To be filled out by author. Add the `Needs More Info` label and assign to self on creation._
+> _To be filled out by author. Add the `Enhancement` and `Needs More Info` labels, and assign to self on creation._
 
 #### **Description**
-A description of the bug fixed, feature added, or refactor made in this pull request.
+A description of the feature added or other enhancement made in this pull request.
 
 #### **Related Issue**
-A direct reference to the related issue. Add the label corresponding to the issue type (`Bug`, `Enhancement`, `Technical Debt`, `Tooling`).
+A direct reference to the related issue.
 
 #### **Type of change**
 _Please delete options that are not relevant._
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+- [ ] Breaking change (feature that would cause existing functionality to not work as expected)
+  - If the change is a breaking one, pre-fix the pull request title with `**BREAKING** `
 
 #### **Changelog**
 - An itemized list of changes
@@ -28,7 +26,7 @@ _Please delete options that are not relevant._
 
 #### **How Has This Been Tested?**
 
-Please describe the tests that you ran to verify your changes. Provide instructions, screenshots, & videos so we can reproduce.
+Please describe the tests that you ran to verify your enhancement meets the spec. Provide instructions, screenshots, & videos so we can reproduce.
 
 - [ ] Test A
 - [ ] Test B
@@ -39,7 +37,7 @@ Mark any irrelevant checklist items as `[N/A]`.
 
 - [ ] This pull request contains the latest changes from the main development branch
 - [ ] All build files in this pull request contain the latest source code changes
-- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] I have added tests that prove my feature works as specced
 - [ ] New and existing unit tests pass locally with my changes
 - [ ] My changes generate no new warnings
 - [ ] I have tested this change in the following browsers:
@@ -63,7 +61,7 @@ Mark any irrelevant checklist items as `[N/A]`.
 
 #### **Review Checklist**
 Start a review, using the checklist below as a guideline. Comment on any problem you notice. If the problem won't affect the status of the review, preface it with `NITPICK:`. Only check off items if there are no problems that need to be fixed related to them.
-- [ ] The source code/documentation is still appropriately easy to read and understand after the changes are applied.
+- [ ] The source code & documentation are still appropriately easy to read and understand after the changes are applied.
 - [ ] On examination of the source code, there are no obvious problems that will arise as a result of these changes (testing will occur post-merge as part of issue verification).
 
 After all feedback has been written, if any part of the feedback requires changes, conclude the review with `Changes Requested`, and re-assign the pull request to its author.
@@ -87,8 +85,6 @@ If adding any changes to the pull request, those changes should be uploaded to t
 Once the pull request has the minimum number of `Approved` reviews and will not be changed any further, the following actions should be taken:
 1. Merge the pull request.
 1. Delete the source branch.
-1. Open the related issue from the Content section.
-1. Check off the step(s) completed by this pull request.
-1. If all steps are completed, follow the instructions for moving on to the Verification stage.
+1. Open the Related Issue from the Content section and follow its "After Merging Pull Requests" instructions.
 
 > _After all steps are completed, no more actions are required._
