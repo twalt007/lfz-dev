@@ -1,9 +1,13 @@
 function install-network-tools() {
 
-  apt-get install -y \
-    curl \
-    httpie \
-    telnet \
-    iputils-ping \
-    traceroute
+  DEBIAN_FRONTEND=noninteractive \
+  apt-get -y -o Dpkg::Options::="--force-confdef" \
+             -o Dpkg::Options::="--force-confold" \
+    install \
+      unzip \
+      curl \
+      httpie \
+      telnet \
+      iputils-ping \
+      traceroute
 }

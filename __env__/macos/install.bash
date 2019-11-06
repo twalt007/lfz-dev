@@ -21,6 +21,7 @@ desktop_path="$HOME/Desktop"
 lfz_dev_path="$desktop_path/lfz-dev"
 
 cp -R $lfz_dev_path/__env__ $lfz_dev_path/*.php $lfz_path/
+cp -R $lfz_dev_path/__env__ $lfz_dev_path/*.html $lfz_path/
 
 compose_file_path="$lfz_path/__env__/docker/lfz/docker-compose.yml"
 
@@ -35,6 +36,8 @@ version: '3.7'
 
 services:
   dev:
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
     build:
       context: ../../
       dockerfile: docker/lfz/Dockerfile
@@ -47,21 +50,25 @@ services:
       - 443:443
       - 3000:3000
       - 3001:3001
-      - 3306:3306
+      - 8081:8081
       - 9000:9000
     volumes:
       - dev_home:/home/dev/
-      - dev_data:/var/lib/mysql/
-      - dev_web:/etc/apache2/
+      - dev_pg:/var/lib/postgresql/10/main/
+      - dev_mysql:/var/lib/mysql/
+      - dev_apache:/etc/apache2/
+      - dev_nginx:/etc/nginx/
       - dev_php:/etc/php/
       - $HOME/Desktop:/home/dev/Desktop
       - $HOME/lfz:/home/dev/lfz
     command: ["tail", "-f", "/dev/null"]
 
 volumes:
-  dev_web:
+  dev_apache:
+  dev_nginx:
   dev_php:
-  dev_data:
+  dev_pg:
+  dev_mysql:
   dev_home:
 
 EOF
@@ -77,8 +84,6 @@ sleep 2
 docker-compose -f $compose_file_path build 2>&1 | tee $desktop_path/lfz-dev-install.log
 
 if [ ${PIPESTATUS[0]} -eq 0 ]; then
-  mv "$lfz_dev_path" "$lfz_path/lfz-dev"
-  mv "$desktop_path/lfz-dev-install.log" "$lfz_path/lfz-dev-install.log"
   echo -e '\nDone!\nDevelopment environment setup succeeded!\n'
   exit 0
 fi

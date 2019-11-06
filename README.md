@@ -11,14 +11,18 @@ This repository contains installation instructions for setting up a development 
 - Ubuntu Linux 18.04 LTS
 - Git Version Control System
 - Apache 2.4 Web Server
+- Nginx 1.14 Web Server
 - PHP 7.2
 - MySQL 5.7 Database Server
+- PostgreSQL 10 Database Server
+- pgweb Web Admin for PostgreSQL
 - phpMyAdmin Web Admin for MySQL
 - Node.js 10
 - Telnet, Ping, and Traceroute network utilities
 - HTTPie Command Line HTTP Client
 - SSH Client
 - Preconfigured Cmder Console Emulator (Windows)
+- Custom Terminal Theme (MacOS)
 
 ## System Requirements
 
