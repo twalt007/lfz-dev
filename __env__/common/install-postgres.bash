@@ -8,6 +8,8 @@ export PGPASSWORD=lfz
 export PGUSER=dev
 export PGDATABASE=dev
 
+alias pgweb='pgweb --bind=0.0.0.0'
+
 EOF
 
   apt-get -yq install postgresql && \
