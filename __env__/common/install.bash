@@ -4,6 +4,8 @@ source $__dirname/install-network-tools.bash
 source $__dirname/install-mysql.bash
 source $__dirname/install-phpmyadmin.bash
 source $__dirname/install-node.bash
+source $__dirname/install-postgres.bash
+source $__dirname/install-nginx.bash
 
 function announce() {
   echo -e '\n\n\n\n\n'
@@ -27,8 +29,12 @@ announce "Git" && install-git || bail "Git"
 
 announce "MySQL" && install-mysql || bail "MySQL"
 
+announce "PostgreSQL" && install-postgres || bail "PostgreSQL"
+
 announce "Apache and phpMyAdmin" && install-phpmyadmin || bail "Apache and phpMyAdmin"
 
 announce "Node.js" && install-node || bail "Node.js"
+
+announce "Nginx" && install-nginx || bail "Nginx"
 
 chown -R dev:dev /home/dev

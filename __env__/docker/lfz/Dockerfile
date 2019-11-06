@@ -18,6 +18,8 @@ RUN apt-get install -y \
 RUN locale-gen en_US.UTF-8
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 COPY common/*.bash /setup/
 COPY common/.profile /home/dev/.profile
 
@@ -25,6 +27,6 @@ USER dev
 
 WORKDIR /home/dev
 
-EXPOSE 80 443 3000 3001
+EXPOSE 80 443 3000 3001 8081 9000
 
 RUN sudo bash /setup/install.bash
