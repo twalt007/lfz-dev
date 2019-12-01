@@ -107,9 +107,13 @@ To check your available disk space, open **File Explorer** and click on **This P
     ```bash
     sudo bash "$(wslpath "$(cmd.exe /C "echo %USERPROFILE%\Desktop\lfz-dev\__env__\windows\install.bash")" | tr -d '\r')"
     ```
-3. If you are prompted for a password, then type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
-4. Good job! You can take a break, 'cause this may take a while!
-5. Once installation is complete, close **Cmder**.
+3. **If that fails immediately, then try this command that adds OneDrive to the install path.**
+    ```bash
+    sudo bash "$(wslpath "$(cmd.exe /C "echo %USERPROFILE%\OneDrive\Desktop\lfz-dev\__env__\windows\install.bash")" | tr -d '\r')"
+    ```
+4. If you are prompted for a password, then type `lfz` and press `Enter`. **Note:** When you type this password, there will be no visual indication that anything is happening. This is normal.
+5. Good job! You can take a break, 'cause this may take a while!
+6. Once installation is complete, close **Cmder**.
 
 ![Running the Windows installer](__env__/windows/screenshots/run-windows-installer.gif)
 
