@@ -2,6 +2,11 @@ windows_home="$(wslpath "$(/mnt/c/Windows/System32/cmd.exe /C "echo %USERPROFILE
 desktop_path="$windows_home/Desktop"
 lfz_dev_path="$desktop_path/lfz-dev"
 
+if [ ! -d $desktop_path ]; then
+  desktop_path="$windows_home/OneDrive/Desktop"
+  lfz_dev_path="$desktop_path/lfz-dev"
+fi
+
 cp /etc/skel/.bashrc .bashrc
 cat << EOF >> /home/dev/.bashrc
 
