@@ -6,6 +6,7 @@ function install-network-tools() {
     install \
       unzip \
       curl \
+      host \
       httpie \
       telnet \
       iputils-ping \
