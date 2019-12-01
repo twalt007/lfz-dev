@@ -1,4 +1,4 @@
-# lfz-dev
+# DO NOT FORK - lfz-dev - DO NOT FORK
 
 LearningFuze student development environment.
 
