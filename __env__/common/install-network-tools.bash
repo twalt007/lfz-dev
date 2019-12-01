@@ -9,5 +9,6 @@ function install-network-tools() {
       httpie \
       telnet \
       iputils-ping \
+      netcat-openbsd \
       traceroute
 }
