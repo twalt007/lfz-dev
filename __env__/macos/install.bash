@@ -21,7 +21,6 @@ desktop_path="$HOME/Desktop"
 lfz_dev_path="$desktop_path/lfz-dev"
 
 cp -R $lfz_dev_path/__env__ $lfz_dev_path/*.php $lfz_path/
-cp -R $lfz_dev_path/__env__ $lfz_dev_path/*.html $lfz_path/
 
 compose_file_path="$lfz_path/__env__/docker/lfz/docker-compose.yml"
 

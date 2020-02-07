@@ -22,7 +22,6 @@ ln -sf "$windows_home/lfz" /home/dev/lfz
 rm -f /home/dev/Desktop
 ln -sf "$desktop_path" /home/dev/Desktop
 cp /home/dev/Desktop/lfz-dev/*.php /home/dev/lfz
-cp /home/dev/Desktop/lfz-dev/*.html /home/dev/lfz
 mkdir -p /tmp/setup
 cp /home/dev/Desktop/lfz-dev/__env__/common/*.bash /tmp/setup
 
