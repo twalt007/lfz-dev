@@ -14,7 +14,7 @@ EOF
 
   apt-get -yq install postgresql && \
   service postgresql start && \
-  sudo -u postgres psql -c "create user dev with createdb password 'lfz'" && \
+  sudo -u postgres psql -c "create user dev with superuser password 'lfz'" && \
   sudo -u postgres bash -c "createdb -O dev dev" && \
   http -d get $pgweb_url -o pgweb_linux_amd64.zip && \
     unzip pgweb_linux_amd64.zip && \
