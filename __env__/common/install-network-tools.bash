@@ -11,5 +11,22 @@ function install-network-tools() {
       telnet \
       iputils-ping \
       netcat-openbsd \
-      traceroute
+      traceroute && \
+
+  mkdir -p /home/dev/.httpie && \
+
+  cat << EOF > /home/dev/.httpie/config.json
+
+{
+    "__meta__": {
+        "about": "HTTPie configuration file",
+        "help": "https://httpie.org/doc#config",
+        "httpie": "0.9.8"
+    },
+    "default_options": [
+        "--session=default"
+    ]
+}
+
+EOF
 }
